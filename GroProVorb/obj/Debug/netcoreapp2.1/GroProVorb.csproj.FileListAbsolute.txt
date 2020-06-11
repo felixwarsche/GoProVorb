@@ -1,0 +1,11 @@
+C:\Users\matse\source\repos\GroProVorb\GroProVorb\bin\Debug\netcoreapp2.1\GroProVorb.deps.json
+C:\Users\matse\source\repos\GroProVorb\GroProVorb\bin\Debug\netcoreapp2.1\GroProVorb.runtimeconfig.json
+C:\Users\matse\source\repos\GroProVorb\GroProVorb\bin\Debug\netcoreapp2.1\GroProVorb.runtimeconfig.dev.json
+C:\Users\matse\source\repos\GroProVorb\GroProVorb\bin\Debug\netcoreapp2.1\GroProVorb.dll
+C:\Users\matse\source\repos\GroProVorb\GroProVorb\bin\Debug\netcoreapp2.1\GroProVorb.pdb
+C:\Users\matse\source\repos\GroProVorb\GroProVorb\obj\Debug\netcoreapp2.1\GroProVorb.csprojAssemblyReference.cache
+C:\Users\matse\source\repos\GroProVorb\GroProVorb\obj\Debug\netcoreapp2.1\GroProVorb.csproj.CoreCompileInputs.cache
+C:\Users\matse\source\repos\GroProVorb\GroProVorb\obj\Debug\netcoreapp2.1\GroProVorb.AssemblyInfoInputs.cache
+C:\Users\matse\source\repos\GroProVorb\GroProVorb\obj\Debug\netcoreapp2.1\GroProVorb.AssemblyInfo.cs
+C:\Users\matse\source\repos\GroProVorb\GroProVorb\obj\Debug\netcoreapp2.1\GroProVorb.dll
+C:\Users\matse\source\repos\GroProVorb\GroProVorb\obj\Debug\netcoreapp2.1\GroProVorb.pdb
