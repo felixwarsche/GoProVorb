@@ -1,0 +1,1 @@
+﻿Fehler beim Einlesen der Datei: Es sind nur Zahlenwertezwischen 1 und 9 erlaubt.

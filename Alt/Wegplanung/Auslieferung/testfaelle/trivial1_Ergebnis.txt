@@ -1,0 +1,5 @@
+﻿2x2 Feld
+Startzelle: 1, 1, Zielzelle: 2, 2
+Abschätzung der Kostenobergrenze: 5 KE
+Minimalkosten: 5 KE
+Weg: S; 1,2; Z

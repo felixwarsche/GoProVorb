@@ -1,0 +1,5 @@
+﻿Sumpfgebiet
+Startzelle: 2, 2, Zielzelle: 7, 6
+Abschätzung der Kostenobergrenze: 16 KE
+Minimalkosten: 8 KE
+Weg: S; 3,2; 4,2; 4,3; 5,3; 6,3; 7,3; 7,4; 7,5; Z

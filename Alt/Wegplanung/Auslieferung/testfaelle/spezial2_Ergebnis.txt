@@ -1,0 +1,5 @@
+﻿Gebiet mit 20 x 20 Zellen
+Startzelle: 16, 2, Zielzelle: 2, 14
+Abschätzung der Kostenobergrenze: 126 KE
+Minimalkosten: 86 KE
+Weg: S; 16,3; 16,4; 16,5; 15,5; 14,5; 13,5; 13,6; 12,6; 12,7; 11,7; 11,8; 10,8; 9,8; 9,9; 9,10; 9,11; 9,12; 9,13; 9,14; 8,14; 7,14; 6,14; 5,14; 4,14; 3,14; Z

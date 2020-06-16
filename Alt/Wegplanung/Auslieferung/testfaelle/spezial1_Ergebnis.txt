@@ -1,0 +1,5 @@
+﻿Beispiel 1: s.z vertauscht
+Startzelle: 7, 6, Zielzelle: 2, 2
+Abschätzung der Kostenobergrenze: 72 KE
+Minimalkosten: 8 KE
+Weg: S; 7,5; 7,4; 7,3; 6,3; 5,3; 4,3; 4,2; 3,2; Z

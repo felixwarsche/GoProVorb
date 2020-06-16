@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpKI>
+
+  <HelpKINode Title=" namespace" Url="html/96f28dfd-2c23-c332-ac2f-6930f1f93bf9.htm" />
+  <HelpKINode Title="&lt;Module&gt; class" Url="html/768899a6-3ddf-cf21-97b9-84ee66e3ce20.htm" />
+  <HelpKINode Title="&lt;Module&gt; class">
+    <HelpKINode Title="about &lt;Module&gt; class" Url="html/768899a6-3ddf-cf21-97b9-84ee66e3ce20.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AdjazenzMatrix field" Url="html/d835933e-015e-9ee2-b078-9b5d1becc177.htm" />
+  <HelpKINode Title="AdjazenzMatrixAusgabe method" Url="html/aacbb373-4b68-cf7e-a3e4-8aeb130a7f29.htm" />
+  <HelpKINode Title="Ausgabe class" Url="html/2afdab74-ca1c-92a2-4016-90fc97432075.htm" />
+  <HelpKINode Title="Ausgabe class" Url="html/7ea90c7e-9e7e-0cfb-b1e4-d9ac86b8bd42.htm" />
+  <HelpKINode Title="Ausgabe class">
+    <HelpKINode Title="about Ausgabe class" Url="html/2afdab74-ca1c-92a2-4016-90fc97432075.htm" />
+    <HelpKINode Title="all members" Url="html/7ea90c7e-9e7e-0cfb-b1e4-d9ac86b8bd42.htm" />
+    <HelpKINode Title="constructor" Url="html/afc63768-e88e-c507-c787-e22ff0691f6c.htm" />
+    <HelpKINode Title="methods" Url="html/b2a4d1db-8ccc-902c-c435-76dc75775b9d.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Ausgabe.AdjazenzMatrixAusgabe method" Url="html/aacbb373-4b68-cf7e-a3e4-8aeb130a7f29.htm" />
+  <HelpKINode Title="Ausgabe.Ausgabe constructor" Url="html/afc63768-e88e-c507-c787-e22ff0691f6c.htm" />
+  <HelpKINode Title="Ausgabe.ErgebnisAusgabe method" Url="html/1cf287ef-fec0-b2fb-183c-9e8b0b60dd1c.htm" />
+  <HelpKINode Title="Ausgabe.ErgebnisDateiAusgabe method" Url="html/7824b372-1797-e8a5-e9d2-fdf9375dd08b.htm" />
+  <HelpKINode Title="Ausgabe.FehlerAusgabe method" Url="html/b2d45d53-76f8-19f0-236d-3bd6cf583d7c.htm" />
+  <HelpKINode Title="Ausgabe.FeldAusgabe method" Url="html/0b0ede47-455e-a297-b2d8-f76491c114a6.htm" />
+  <HelpKINode Title="Ausgabe.StringAusgabe method" Url="html/b4ed9f37-bf8b-db46-d5e0-4b07f4c8ca97.htm" />
+  <HelpKINode Title="DateiEinlesen method" Url="html/a4f3a8fa-1737-8474-2d0a-0de85919bb45.htm" />
+  <HelpKINode Title="Eingabe class" Url="html/471b34e6-37f1-ea3b-544a-813925540a9b.htm" />
+  <HelpKINode Title="Eingabe class" Url="html/a089dfbe-3f02-b180-fa6b-f21d9231bdc8.htm" />
+  <HelpKINode Title="Eingabe class">
+    <HelpKINode Title="about Eingabe class" Url="html/471b34e6-37f1-ea3b-544a-813925540a9b.htm" />
+    <HelpKINode Title="all members" Url="html/a089dfbe-3f02-b180-fa6b-f21d9231bdc8.htm" />
+    <HelpKINode Title="constructor" Url="html/840b92ae-de65-62f3-55ff-602bd8fe5303.htm" />
+    <HelpKINode Title="methods" Url="html/e6ea8fa5-08b2-842f-f063-0a0c1e68664b.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Eingabe.DateiEinlesen method" Url="html/a4f3a8fa-1737-8474-2d0a-0de85919bb45.htm" />
+  <HelpKINode Title="Eingabe.Eingabe constructor" Url="html/840b92ae-de65-62f3-55ff-602bd8fe5303.htm" />
+  <HelpKINode Title="Eingabe.FeldUmwandeln method" Url="html/6e6d0e40-2868-7731-d369-f7e26cfbd2ee.htm" />
+  <HelpKINode Title="Ergebnis class" Url="html/19a0afb1-4141-8c6e-6aab-70c450b90504.htm" />
+  <HelpKINode Title="Ergebnis class" Url="html/59105585-0429-5c52-2216-19f86cc63fa0.htm" />
+  <HelpKINode Title="Ergebnis class">
+    <HelpKINode Title="about Ergebnis class" Url="html/19a0afb1-4141-8c6e-6aab-70c450b90504.htm" />
+    <HelpKINode Title="all members" Url="html/59105585-0429-5c52-2216-19f86cc63fa0.htm" />
+    <HelpKINode Title="constructor" Url="html/85137d7e-e4d0-946c-1508-e2e4337ea65f.htm" />
+    <HelpKINode Title="fields" Url="html/be7fadd0-b950-4afb-c969-9ccd5643a218.htm" />
+    <HelpKINode Title="methods" Url="html/cd282d84-7226-4eef-a437-2eb20d6c0106.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Ergebnis.AdjazenzMatrix field" Url="html/d835933e-015e-9ee2-b078-9b5d1becc177.htm" />
+  <HelpKINode Title="Ergebnis.Ergebnis constructor" Url="html/85137d7e-e4d0-946c-1508-e2e4337ea65f.htm" />
+  <HelpKINode Title="Ergebnis.Feld field" Url="html/6bdbf552-8e17-19eb-5651-d12f29979cb1.htm" />
+  <HelpKINode Title="Ergebnis.iKostenAbsch field" Url="html/3b354b1c-c4e3-acf4-aeed-78a9332599df.htm" />
+  <HelpKINode Title="Ergebnis.iKostenMinimal field" Url="html/91ed2564-d088-da7b-b31a-3811410a4597.htm" />
+  <HelpKINode Title="Ergebnis.iStartknoten field" Url="html/8b59e9ac-cb7d-c6d1-c377-fc8125ddea37.htm" />
+  <HelpKINode Title="Ergebnis.iZielknoten field" Url="html/5e0f604c-0666-24ed-2370-f4e55fdca8c8.htm" />
+  <HelpKINode Title="Ergebnis.KnotenZuIndex method" Url="html/51e1eca6-00a5-7ed4-2f72-7a20a99dd8ff.htm" />
+  <HelpKINode Title="Ergebnis.kuerzesterWeg field" Url="html/1e2c30aa-9cf8-4971-9864-0858af703f07.htm" />
+  <HelpKINode Title="Ergebnis.si field" Url="html/817dc955-b394-6e28-5836-1095a26d9177.htm" />
+  <HelpKINode Title="Ergebnis.sk field" Url="html/7dec9367-46e1-9107-c290-0a554776a5a0.htm" />
+  <HelpKINode Title="Ergebnis.sKommentar field" Url="html/b2f49e04-36f0-0939-280d-01a715455045.htm" />
+  <HelpKINode Title="Ergebnis.SpalteZuKnoten method" Url="html/2e377aae-6db0-9d7e-8276-605363dc28f2.htm" />
+  <HelpKINode Title="Ergebnis.ZeileZuKnoten method" Url="html/41ab0bf5-3e78-b11b-7112-5c0214b3bb7f.htm" />
+  <HelpKINode Title="Ergebnis.zi field" Url="html/1a587955-431e-5242-4e91-39b11c1c2f07.htm" />
+  <HelpKINode Title="Ergebnis.zk field" Url="html/20236e40-1634-c91c-b766-97d917992df8.htm" />
+  <HelpKINode Title="ErgebnisAusgabe method" Url="html/1cf287ef-fec0-b2fb-183c-9e8b0b60dd1c.htm" />
+  <HelpKINode Title="ErgebnisDateiAusgabe method" Url="html/7824b372-1797-e8a5-e9d2-fdf9375dd08b.htm" />
+  <HelpKINode Title="FehlerAusgabe method" Url="html/b2d45d53-76f8-19f0-236d-3bd6cf583d7c.htm" />
+  <HelpKINode Title="Feld field" Url="html/6bdbf552-8e17-19eb-5651-d12f29979cb1.htm" />
+  <HelpKINode Title="FeldAusgabe method" Url="html/0b0ede47-455e-a297-b2d8-f76491c114a6.htm" />
+  <HelpKINode Title="FeldUmwandeln method" Url="html/6e6d0e40-2868-7731-d369-f7e26cfbd2ee.htm" />
+  <HelpKINode Title="iKostenAbsch field" Url="html/3b354b1c-c4e3-acf4-aeed-78a9332599df.htm" />
+  <HelpKINode Title="iKostenMinimal field" Url="html/91ed2564-d088-da7b-b31a-3811410a4597.htm" />
+  <HelpKINode Title="iStartknoten field" Url="html/8b59e9ac-cb7d-c6d1-c377-fc8125ddea37.htm" />
+  <HelpKINode Title="iZielknoten field" Url="html/5e0f604c-0666-24ed-2370-f4e55fdca8c8.htm" />
+  <HelpKINode Title="KnotenZuIndex method" Url="html/51e1eca6-00a5-7ed4-2f72-7a20a99dd8ff.htm" />
+  <HelpKINode Title="KostenAbsch method" Url="html/f127e03d-5398-d0ee-37e8-2d2677dbf0e0.htm" />
+  <HelpKINode Title="KostenMinimal method" Url="html/71b216a8-33db-db63-276c-7d8039af933f.htm" />
+  <HelpKINode Title="kuerzesterWeg field" Url="html/1e2c30aa-9cf8-4971-9864-0858af703f07.htm" />
+  <HelpKINode Title="Main method" Url="html/a17d011b-15cd-7c0a-cc39-170197035721.htm" />
+  <HelpKINode Title="Program class" Url="html/8fa58ee9-b397-d90d-a7e1-05702ccd746b.htm" />
+  <HelpKINode Title="Program class" Url="html/e3f7c805-de7a-2026-7f4c-f3f7c58049d5.htm" />
+  <HelpKINode Title="Program class">
+    <HelpKINode Title="about Program class" Url="html/8fa58ee9-b397-d90d-a7e1-05702ccd746b.htm" />
+    <HelpKINode Title="all members" Url="html/e3f7c805-de7a-2026-7f4c-f3f7c58049d5.htm" />
+    <HelpKINode Title="constructor" Url="html/eca1e823-86b8-59f5-60b8-3c1194696f9b.htm" />
+    <HelpKINode Title="methods" Url="html/049b4390-ab31-791b-600b-3380a98d0347.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Program.KostenAbsch method" Url="html/f127e03d-5398-d0ee-37e8-2d2677dbf0e0.htm" />
+  <HelpKINode Title="Program.KostenMinimal method" Url="html/71b216a8-33db-db63-276c-7d8039af933f.htm" />
+  <HelpKINode Title="Program.Main method" Url="html/a17d011b-15cd-7c0a-cc39-170197035721.htm" />
+  <HelpKINode Title="Program.Program constructor" Url="html/eca1e823-86b8-59f5-60b8-3c1194696f9b.htm" />
+  <HelpKINode Title="si field" Url="html/817dc955-b394-6e28-5836-1095a26d9177.htm" />
+  <HelpKINode Title="sk field" Url="html/7dec9367-46e1-9107-c290-0a554776a5a0.htm" />
+  <HelpKINode Title="sKommentar field" Url="html/b2f49e04-36f0-0939-280d-01a715455045.htm" />
+  <HelpKINode Title="SpalteZuKnoten method" Url="html/2e377aae-6db0-9d7e-8276-605363dc28f2.htm" />
+  <HelpKINode Title="StringAusgabe method" Url="html/b4ed9f37-bf8b-db46-d5e0-4b07f4c8ca97.htm" />
+  <HelpKINode Title="Wegplanung namespace" Url="html/34189de4-663b-b214-3155-6e77cf153f94.htm" />
+  <HelpKINode Title="Wegplanung.Ausgabe class" Url="html/2afdab74-ca1c-92a2-4016-90fc97432075.htm" />
+  <HelpKINode Title="Wegplanung.Ausgabe class" Url="html/7ea90c7e-9e7e-0cfb-b1e4-d9ac86b8bd42.htm" />
+  <HelpKINode Title="Wegplanung.Eingabe class" Url="html/471b34e6-37f1-ea3b-544a-813925540a9b.htm" />
+  <HelpKINode Title="Wegplanung.Eingabe class" Url="html/a089dfbe-3f02-b180-fa6b-f21d9231bdc8.htm" />
+  <HelpKINode Title="Wegplanung.Ergebnis class" Url="html/19a0afb1-4141-8c6e-6aab-70c450b90504.htm" />
+  <HelpKINode Title="Wegplanung.Ergebnis class" Url="html/59105585-0429-5c52-2216-19f86cc63fa0.htm" />
+  <HelpKINode Title="Wegplanung.Program class" Url="html/8fa58ee9-b397-d90d-a7e1-05702ccd746b.htm" />
+  <HelpKINode Title="Wegplanung.Program class" Url="html/e3f7c805-de7a-2026-7f4c-f3f7c58049d5.htm" />
+  <HelpKINode Title="ZeileZuKnoten method" Url="html/41ab0bf5-3e78-b11b-7112-5c0214b3bb7f.htm" />
+  <HelpKINode Title="zi field" Url="html/1a587955-431e-5242-4e91-39b11c1c2f07.htm" />
+  <HelpKINode Title="zk field" Url="html/20236e40-1634-c91c-b766-97d917992df8.htm" />
+</HelpKI>
