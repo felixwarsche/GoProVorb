@@ -1,0 +1,1 @@
+﻿Fehler beim Einlesen der Datei: Es darf nur eine Startzelle definiert sein.

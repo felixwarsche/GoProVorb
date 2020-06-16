@@ -1,0 +1,5 @@
+﻿1x2 Feld
+Startzelle: 1, 1, Zielzelle: 2, 1
+Abschätzung der Kostenobergrenze: 0 KE
+Minimalkosten: 0 KE
+Weg: S; Z

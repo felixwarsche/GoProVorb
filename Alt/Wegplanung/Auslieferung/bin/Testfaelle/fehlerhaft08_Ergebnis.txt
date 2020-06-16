@@ -1,0 +1,1 @@
+﻿Fehler beim Einlesen der Datei: Das Feld darf nicht mehr als 20 Zeilen haben.

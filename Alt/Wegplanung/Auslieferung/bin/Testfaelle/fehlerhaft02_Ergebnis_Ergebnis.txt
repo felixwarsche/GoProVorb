@@ -1,0 +1,1 @@
+﻿Fehler beim Einlesen der Datei: Die angegebene Datei erhält eine fehlerhafte 1. Zeile

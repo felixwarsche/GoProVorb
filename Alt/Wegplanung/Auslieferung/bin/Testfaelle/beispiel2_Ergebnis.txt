@@ -1,0 +1,5 @@
+﻿Gebiet mit 8 x 8 Zellen
+Startzelle: 2, 2, Zielzelle: 7, 6
+Abschätzung der Kostenobergrenze: 24 KE
+Minimalkosten: 15 KE
+Weg: S; 2,3; 2,4; 3,4; 3,5; 4,5; 4,6; 5,6; 6,6; Z
