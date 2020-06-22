@@ -4,19 +4,20 @@ using System.Text;
 
 namespace GroProVorb.GüteTestVerfahren
 {
-    class SequenzUpDownTest : GüteTests
+    class EigenesGüteTestverfahren : GüteTests
     {
         long[] zahlen;
 
         /// <summary>
-        /// Berechnet die Anzahl der Bitfolgen mit der Länge K.
+        /// Angelehnt an die SequenzUpDown werden hier die Wechsel der größen geprüft und dann im Anschluss durch die Anzahl der möglichen Wechsel dividiert.
+        /// Soll Aufschluss über die mittleren Wechsel geben. Je höher desto besser ! 
         /// </summary>
         /// <param name="k"></param>
         /// <returns></returns>
         public double berechne(int k)
         {
             int[] bitmaske = new int[zahlen.Length];
-            for(int i=0; i<zahlen.Length-1; i++)
+            for (int i = 0; i < zahlen.Length - 1; i++)
             {
                 if (zahlen[i] < zahlen[i + 1])
                 {
@@ -27,21 +28,15 @@ namespace GroProVorb.GüteTestVerfahren
                     bitmaske[i] = 0;
                 }
             }
-            int counter = 0;
-            int kBitFolgen = 0;
-            for (int i = 0; i < bitmaske.Length - 1; i++)
+            long summe = 0;
+            for(int i=0; i<bitmaske.Length-1; i++)
             {
-                counter++;
-                if(zahlen[i] != zahlen[i + 1])
+                if (bitmaske[i] != bitmaske[i + 1])
                 {
-                    if(counter == k)
-                    {
-                        kBitFolgen++;
-                    }
-                    counter = 0;
+                    summe++;
                 }
             }
-            return kBitFolgen;
+            return summe / zahlen.Length;
         }
     }
 }

@@ -9,10 +9,24 @@ namespace GroProVorb
         long[] zahlen;
         long mittelwert;
 
-        public SerielleAutokorrelation(long[] zahlen, long mittelwert)
+        public SerielleAutokorrelation(long[] zahlen)
         {
             this.zahlen = zahlen;
-            this.mittelwert = mittelwert;
+            this.mittelwert = berechneMittelwert();
+        }
+
+        /// <summary>
+        /// Berechnet den Mittelwert für das gegebene Zahlen-Array
+        /// </summary>
+        /// <returns></returns>
+        private long berechneMittelwert()
+        {
+            long summe = 0;
+            foreach(var zahl in zahlen)
+            {
+                summe += zahl;
+            }
+            return summe / zahlen.Length;
         }
 
         /// <summary>

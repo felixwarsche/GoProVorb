@@ -13,6 +13,10 @@ namespace GroProVorb
             i = 0;
         }
 
+        /// <summary>
+        /// Generiert auf Basis der jetzigen Zeit und der Systemzeit eine Zufallszahl in Abhängigkeit der i-ten Zufallszahl, welche generiert wird.
+        /// </summary>
+        /// <returns></returns>
         public double GeneriereZufallszahl()
         {
             DateTime now = DateTime.Now;

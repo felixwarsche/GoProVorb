@@ -14,6 +14,10 @@ namespace GroProVorb
             parameter = p;
         }
 
+        /// <summary>
+        /// Generiert eine Zufallszahl in Abhängikeit der gegebenen Parameter und speichert den x-Parameter nach Schleifendurchlauf.
+        /// </summary>
+        /// <returns></returns>
         public double GeneriereZufallszahl()
         {
             long m = parameter[0];
