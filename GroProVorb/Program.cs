@@ -11,7 +11,7 @@ namespace GroProVorb
             //Einlesen der Daten
             Eingabe eingabe = new Eingabe();
             eingabe.Einlesen("C:/Users/fwarschewski/Desktop/GoProVorb/GoProVorb/GroProVorb/TestEingabe.txt");
-            string[] save = new string[100];
+            string[] save = new string[999];
             int i = 0;
             foreach (var generator in eingabe.Zufallsgeneratoren)
             {

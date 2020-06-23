@@ -17,7 +17,7 @@ namespace Zufallsklassen
 
         /// <summary>
         /// Angelehnt an die SequenzUpDown werden hier die Wechsel der größen geprüft und dann im Anschluss durch die Anzahl der möglichen Wechsel dividiert.
-        /// Soll Aufschluss über die mittleren Wechsel geben. Je höher desto besser ! 
+        /// Soll Aufschluss über die mittleren Wechsel geben. Wenn die Werte um die 0,5 liegen liegt eine gute Güte vor! 
         /// </summary>
         /// <param name="k">Sequenzlänge</param>
         /// <returns></returns>

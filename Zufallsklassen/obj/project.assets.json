@@ -178,23 +178,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\fwarschewski\\.nuget\\packages\\": {},
+    "C:\\Users\\matse\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\fwarschewski\\Desktop\\GoProVorb\\GoProVorb\\Zufallsklassen\\Zufallsklassen.csproj",
+      "projectUniqueName": "C:\\Users\\matse\\source\\repos\\GroProVorb\\Zufallsklassen\\Zufallsklassen.csproj",
       "projectName": "Zufallsklassen",
-      "projectPath": "C:\\Users\\fwarschewski\\Desktop\\GoProVorb\\GoProVorb\\Zufallsklassen\\Zufallsklassen.csproj",
-      "packagesPath": "C:\\Users\\fwarschewski\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\fwarschewski\\Desktop\\GoProVorb\\GoProVorb\\Zufallsklassen\\obj\\",
+      "projectPath": "C:\\Users\\matse\\source\\repos\\GroProVorb\\Zufallsklassen\\Zufallsklassen.csproj",
+      "packagesPath": "C:\\Users\\matse\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\matse\\source\\repos\\GroProVorb\\Zufallsklassen\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\fwarschewski\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\matse\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
