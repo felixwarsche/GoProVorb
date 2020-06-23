@@ -2,19 +2,29 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace GroProVorb.GüteTestVerfahren
+namespace Zufallsklassen
 {
-    class SequenzUpDownTest : GüteTests
+    public class SequenzUpDownTest : GüteTests
     {
-        long[] zahlen;
+        Zufallsbibliothek bibliothek;
+        
+        public SequenzUpDownTest(Zufallsbibliothek bib)
+        {
+            this.bibliothek = bib;
+        }
 
         /// <summary>
         /// Berechnet die Anzahl der Bitfolgen mit der Länge K.
         /// </summary>
         /// <param name="k"></param>
         /// <returns></returns>
-        public double berechne(int k)
+        public double Berechne(int k, int anz)
         {
+            double[] zahlen = new double[anz];
+            for(int i = 0; i < anz; i++)
+            {
+                zahlen[i] = bibliothek.GeneriereZufallszahl();
+            }
             int[] bitmaske = new int[zahlen.Length];
             for(int i=0; i<zahlen.Length-1; i++)
             {

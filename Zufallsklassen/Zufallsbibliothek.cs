@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace GroProVorb
+namespace Zufallsklassen
 {
     public interface Zufallsbibliothek
     {

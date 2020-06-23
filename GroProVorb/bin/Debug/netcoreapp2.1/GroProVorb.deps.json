@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v2.1": {
       "GroProVorb/1.0.0": {
+        "dependencies": {
+          "Zufallsklassen": "1.0.0"
+        },
         "runtime": {
           "GroProVorb.dll": {}
+        }
+      },
+      "Zufallsklassen/1.0.0": {
+        "runtime": {
+          "Zufallsklassen.dll": {}
         }
       }
     }
   },
   "libraries": {
     "GroProVorb/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Zufallsklassen/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

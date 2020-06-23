@@ -2,11 +2,16 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace GroProVorb.GüteTestVerfahren
+namespace Zufallsklassen
 {
-    class EigenesGüteTestverfahren : GüteTests
+    public class EigenesGüteTestverfahren : GüteTests
     {
-        long[] zahlen;
+        Zufallsbibliothek bibliothek;
+       
+        public EigenesGüteTestverfahren(Zufallsbibliothek bib)
+        {
+            this.bibliothek = bib;
+        }
 
         /// <summary>
         /// Angelehnt an die SequenzUpDown werden hier die Wechsel der größen geprüft und dann im Anschluss durch die Anzahl der möglichen Wechsel dividiert.
@@ -14,8 +19,13 @@ namespace GroProVorb.GüteTestVerfahren
         /// </summary>
         /// <param name="k"></param>
         /// <returns></returns>
-        public double berechne(int k)
+        public double Berechne(int k, int anz)
         {
+            double[] zahlen = new double[anz];
+            for (int i = 0; i < anz; i++)
+            {
+                zahlen[i] = bibliothek.GeneriereZufallszahl();
+            }
             int[] bitmaske = new int[zahlen.Length];
             for (int i = 0; i < zahlen.Length - 1; i++)
             {

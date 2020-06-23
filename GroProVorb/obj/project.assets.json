@@ -207,6 +207,16 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "Zufallsklassen/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Zufallsklassen.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Zufallsklassen.dll": {}
+        }
       }
     }
   },
@@ -680,31 +690,37 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "Zufallsklassen/1.0.0": {
+      "type": "project",
+      "path": "../Zufallsklassen/Zufallsklassen.csproj",
+      "msbuildProject": "../Zufallsklassen/Zufallsklassen.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
-      "Microsoft.NETCore.App >= 2.1.0"
+      "Microsoft.NETCore.App >= 2.1.0",
+      "Zufallsklassen >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\matse\\.nuget\\packages\\": {},
+    "C:\\Users\\fwarschewski\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\matse\\source\\repos\\GroProVorb\\GroProVorb\\GroProVorb.csproj",
+      "projectUniqueName": "C:\\Users\\fwarschewski\\Desktop\\GoProVorb\\GoProVorb\\GroProVorb\\GroProVorb.csproj",
       "projectName": "GroProVorb",
-      "projectPath": "C:\\Users\\matse\\source\\repos\\GroProVorb\\GroProVorb\\GroProVorb.csproj",
-      "packagesPath": "C:\\Users\\matse\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\matse\\source\\repos\\GroProVorb\\GroProVorb\\obj\\",
+      "projectPath": "C:\\Users\\fwarschewski\\Desktop\\GoProVorb\\GoProVorb\\GroProVorb\\GroProVorb.csproj",
+      "packagesPath": "C:\\Users\\fwarschewski\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\fwarschewski\\Desktop\\GoProVorb\\GoProVorb\\GroProVorb\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\matse\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\fwarschewski\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -716,7 +732,11 @@
       },
       "frameworks": {
         "netcoreapp2.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\fwarschewski\\Desktop\\GoProVorb\\GoProVorb\\Zufallsklassen\\Zufallsklassen.csproj": {
+              "projectPath": "C:\\Users\\fwarschewski\\Desktop\\GoProVorb\\GoProVorb\\Zufallsklassen\\Zufallsklassen.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
