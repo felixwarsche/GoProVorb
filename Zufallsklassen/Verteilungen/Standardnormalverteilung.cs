@@ -6,14 +6,12 @@ namespace Zufallsklassen
 {
     public class Standardnormalverteilung : Verteilung
     {
-        private String Name;
-        private int[] Verteilungsparameter;
+        private int[] verteilungsparameter;
         private V art;
 
         public Standardnormalverteilung()
         {
-            Name = "Standardnormalverteilung";
-            Verteilungsparameter = new int[] { 0, 1 };
+            verteilungsparameter = new int[] { 0, 1 };
             art = V.Standardnormalverteilung;
         }
 
