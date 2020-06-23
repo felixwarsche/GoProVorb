@@ -7,9 +7,11 @@ namespace Zufallsklassen
     public class EigenesGüteTestverfahren : GüteTests
     {
         Zufallsbibliothek bibliothek;
-       
+        string name;
+
         public EigenesGüteTestverfahren(Zufallsbibliothek bib)
         {
+            this.name = "Eigen";
             this.bibliothek = bib;
         }
 
@@ -17,7 +19,7 @@ namespace Zufallsklassen
         /// Angelehnt an die SequenzUpDown werden hier die Wechsel der größen geprüft und dann im Anschluss durch die Anzahl der möglichen Wechsel dividiert.
         /// Soll Aufschluss über die mittleren Wechsel geben. Je höher desto besser ! 
         /// </summary>
-        /// <param name="k"></param>
+        /// <param name="k">Sequenzlänge</param>
         /// <returns></returns>
         public double Berechne(int k, int anz)
         {
@@ -46,7 +48,7 @@ namespace Zufallsklassen
                     summe++;
                 }
             }
-            return summe / zahlen.Length;
+            return (double)summe / zahlen.Length;
         }
     }
 }

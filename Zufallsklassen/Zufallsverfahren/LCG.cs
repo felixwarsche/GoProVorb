@@ -6,18 +6,20 @@ namespace Zufallsklassen
 {
     public class LCG : Zufallsbibliothek
     {
-        private string name;
+        private Generatorenklasse art;
         private double[] parameter;
         private Verteilung verteilung;
 
-        public LCG(double[] p)
+        public LCG(Generatorenklasse art ,double[] p)
         {
+            this.art = art;
             verteilung = new Gleichverteilung();
             parameter = p;
         }
 
-        public LCG(double[] p, Verteilung v)
+        public LCG(Generatorenklasse art, double[] p, Verteilung v)
         {
+            this.art = art;
             parameter = p;
             verteilung = v;
         }
@@ -57,6 +59,16 @@ namespace Zufallsklassen
             double wert = (double)wertBisMudolo / m;
             parameter[3] = wertBisMudolo;
             return wert;
+        }
+
+        public double getM()
+        {
+            return this.parameter[0];
+        }
+
+        public Generatorenklasse getArt()
+        {
+            return this.art;
         }
     }
 

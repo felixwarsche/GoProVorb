@@ -1,0 +1,100 @@
+Generator: AnsiC, Verfahren: SerielleAutokorrelation, Wert: 0,0481979351332234
+Generator: AnsiC, Verfahren: SequenzUpDown, Wert: 0
+Generator: AnsiC, Verfahren: Eigen, Wert: 0,7
+Generator: MinimalStandard, Verfahren: SerielleAutokorrelation, Wert: 0,0153427661033063
+Generator: MinimalStandard, Verfahren: SequenzUpDown, Wert: 0
+Generator: MinimalStandard, Verfahren: Eigen, Wert: 0,68
+Generator: SIMSCRIPT, Verfahren: SerielleAutokorrelation, Wert: 0,0640624652912883
+Generator: SIMSCRIPT, Verfahren: SequenzUpDown, Wert: 0
+Generator: SIMSCRIPT, Verfahren: Eigen, Wert: 0,62
+Generator: NAGsLCG, Verfahren: SerielleAutokorrelation, Wert: 0,354970122342423
+Generator: NAGsLCG, Verfahren: SequenzUpDown, Wert: 0
+Generator: NAGsLCG, Verfahren: Eigen, Wert: 0,74
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

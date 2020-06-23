@@ -7,9 +7,11 @@ namespace Zufallsklassen
     public class SequenzUpDownTest : GüteTests
     {
         Zufallsbibliothek bibliothek;
+        string name;
         
         public SequenzUpDownTest(Zufallsbibliothek bib)
         {
+            this.name = "SequenzUpDownTest";
             this.bibliothek = bib;
         }
 

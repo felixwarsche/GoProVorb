@@ -7,5 +7,19 @@ namespace Zufallsklassen
     public interface Zufallsbibliothek
     {
         double GeneriereZufallszahl();
+        Generatorenklasse getArt();
+        double getM();
     }
+
+    public enum Generatorenklasse {
+        LCG,
+        AnsiC,
+        MinimalStandard,
+        RANDU,
+        SIMSCRIPT,
+        NAGsLCG,
+        MaplesLCG,
+        Datumsbasiert
+    }
+
 }

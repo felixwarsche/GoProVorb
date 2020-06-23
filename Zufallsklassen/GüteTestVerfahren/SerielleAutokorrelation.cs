@@ -7,9 +7,11 @@ namespace Zufallsklassen
     public class SerielleAutokorrelation : GüteTests
     {
         Zufallsbibliothek bibliothek;
+        string name;
         
         public SerielleAutokorrelation(Zufallsbibliothek b)
         {
+            this.name = "SerielleAutokorrelation";
             this.bibliothek = b;
         }
 
@@ -30,7 +32,7 @@ namespace Zufallsklassen
         /// <summary>
         /// Errechnet den Korrelationswert für das Zufallsgenerierte Array
         /// </summary>
-        /// <param name="k"></param>
+        /// <param name="k">Abstand der verglichenen Zufallszahlen</param>
         /// <returns></returns>
         public double Berechne(int k, int anz)
         {

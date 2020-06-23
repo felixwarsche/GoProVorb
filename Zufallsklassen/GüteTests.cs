@@ -8,4 +8,11 @@ namespace Zufallsklassen
     {
         double Berechne(int k, int anz);
     }
+
+    public enum GüteTestverfahren
+    {
+        SerielleAutokorrelation,
+        SequenzUpDown,
+        Eigen
+    }
 }
