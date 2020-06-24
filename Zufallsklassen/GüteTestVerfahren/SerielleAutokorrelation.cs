@@ -41,6 +41,13 @@ namespace Zufallsklassen
             {
                 zahlen[i] = bibliothek.GeneriereZufallszahl();
             }
+
+            if(k == 0)//wenn kein spezifisches k gewählt wurde
+            {
+                int punkt1 = (int)(bibliothek.GeneriereZufallszahl() * anz);
+                int punkt2 = (int)(bibliothek.GeneriereZufallszahl() * anz);
+                k = punkt1 - punkt2;
+            }
             double mittelwert = BerechneMittelwert(zahlen);
             double zaehler = 0;
             double nenner = 0;
