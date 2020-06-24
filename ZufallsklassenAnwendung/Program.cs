@@ -20,7 +20,7 @@ namespace GroProVorb
                 Assembly asm = Assembly.GetExecutingAssembly();
                 string path = System.IO.Path.GetDirectoryName(asm.Location);
                 // Standard Input verwenden
-                dateipfad = path + "\\Tests\\TestEingabe.txt";
+                dateipfad = path + "\\Tests\\AlleTestsMitSequenzlänge100000.txt";
             }
             //Einlesen der Daten
             Eingabe eingabe = new Eingabe();
@@ -32,7 +32,9 @@ namespace GroProVorb
 
 
             string[] save = new string[999];
-            int i = 0;
+            save[0] = "Die Sequenzlänge der folgenden Ergebnisse beträgt: " + eingabe.Sequenzlänge + " und die Ordnung(falls ungleich 0) beträgt: " + eingabe.K;
+            save[0] = "Die angewandte Verteilung der Zufallszahlen ist die " + eingabe.Verteilung.ToString();
+            int i = 2;
             foreach (var generator in eingabe.Zufallsgeneratoren)
             {
                 foreach (var verfahren in eingabe.GüteTestVerfahren)
