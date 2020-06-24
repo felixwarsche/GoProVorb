@@ -27,13 +27,13 @@ namespace GroProVorb
             eingabe.Einlesen(dateipfad);
 
             // Ausgabe-Dateinamen festlegen (NameEingabedatei_Ergebnisse.txt)
-            dateipfad = Path.GetDirectoryName(dateipfad)
+            dateipfad = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location)+ "\\Ergebnisse"
                + @"\" + Path.GetFileNameWithoutExtension(dateipfad) + "_Ergebnisse.txt";
 
 
             string[] save = new string[999];
             save[0] = "Die Sequenzlänge der folgenden Ergebnisse beträgt: " + eingabe.Sequenzlänge + " und die Ordnung(falls ungleich 0) beträgt: " + eingabe.K;
-            save[0] = "Die angewandte Verteilung der Zufallszahlen ist die " + eingabe.Verteilung.ToString();
+            save[1] = "Die angewandte Verteilung der Zufallszahlen ist die " + eingabe.Verteilung.ToString();
             int i = 2;
             foreach (var generator in eingabe.Zufallsgeneratoren)
             {

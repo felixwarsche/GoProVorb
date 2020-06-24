@@ -1,5 +1,5 @@
+Die Sequenzlänge der folgenden Ergebnisse beträgt: 100000 und die Ordnung(falls ungleich 0) beträgt: 0
 Die angewandte Verteilung der Zufallszahlen ist die Standardnormalverteilung
-
 Generator: AnsiC, Verfahren: SerielleAutokorrelation, Wert: 0,0119761153184848
 Generator: AnsiC, Verfahren: SequenzUpDown, Wert: 1696,01597277337
 Generator: AnsiC, Verfahren: Eigen, Wert: 0,66228
