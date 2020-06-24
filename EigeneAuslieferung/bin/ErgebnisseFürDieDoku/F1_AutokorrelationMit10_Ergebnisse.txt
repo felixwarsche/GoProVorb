@@ -1,26 +1,26 @@
 Die Sequenzlänge der folgenden Ergebnisse beträgt: 10 und die Ordnung(falls ungleich 0) beträgt: 0
 Die angewandte Verteilung der Zufallszahlen ist die Gleichverteilung
 Generator: AnsiC, Verfahren: SerielleAutokorrelation, Wert: 0,604954240540334
-Generator: AnsiC, Verfahren: SequenzUpDown, Wert: 2,65
-Generator: AnsiC, Verfahren: Eigen, Wert: 0,4
 Generator: MinimalStandard, Verfahren: SerielleAutokorrelation, Wert: -0,209268463767507
-Generator: MinimalStandard, Verfahren: SequenzUpDown, Wert: 1,45277777777778
-Generator: MinimalStandard, Verfahren: Eigen, Wert: 0,5
 Generator: RANDU, Verfahren: SerielleAutokorrelation, Wert: 1
-Generator: RANDU, Verfahren: SequenzUpDown, Wert: 3,35
-Generator: RANDU, Verfahren: Eigen, Wert: 0,6
 Generator: SIMSCRIPT, Verfahren: SerielleAutokorrelation, Wert: 0,460073766041444
-Generator: SIMSCRIPT, Verfahren: SequenzUpDown, Wert: 1,45277777777778
-Generator: SIMSCRIPT, Verfahren: Eigen, Wert: 0,5
 Generator: NAGsLCG, Verfahren: SerielleAutokorrelation, Wert: -0,421644634327571
-Generator: NAGsLCG, Verfahren: SequenzUpDown, Wert: 1,15
-Generator: NAGsLCG, Verfahren: Eigen, Wert: 0,7
 Generator: MaplesLCG, Verfahren: SerielleAutokorrelation, Wert: 0,410009962496123
-Generator: MaplesLCG, Verfahren: SequenzUpDown, Wert: 4,25277777777778
-Generator: MaplesLCG, Verfahren: Eigen, Wert: 0,7
-Generator: Datumsbasiert, Verfahren: SerielleAutokorrelation, Wert: 0,911645270222134
-Generator: Datumsbasiert, Verfahren: SequenzUpDown, Wert: 3,25277777777778
-Generator: Datumsbasiert, Verfahren: Eigen, Wert: 0,5
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
