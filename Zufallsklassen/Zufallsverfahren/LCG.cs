@@ -29,7 +29,7 @@ namespace Zufallsklassen
         /// 
         /// Es wird auch abgefragt, welche Verteilung hier angewendet werden soll und dann ggflls. transformiert.
         /// </summary>
-        /// <returns>Zufallszahl</returns>
+        /// <returns>Zufallszahl mit gegebener Verteilung</returns>
         public double GeneriereZufallszahl()
         {
             double x = errechne();
@@ -51,7 +51,7 @@ namespace Zufallsklassen
         /// <summary>
         /// Berechnet eine Gleichverteilte Zufallszahl nach dem Prinzip der erhaltenen Parameter
         /// </summary>
-        /// <returns></returns>
+        /// <returns>Zufallszahl</returns>
         private double errechne()
         {
             double m = parameter[0]; double a = parameter[1]; double c = parameter[2]; double x = parameter[3];

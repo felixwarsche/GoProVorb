@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Reflection;
 using Zufallsklassen;
 
 namespace GroProVorb
@@ -8,9 +9,28 @@ namespace GroProVorb
     {
         static void Main(string[] args)
         {
+            string dateipfad;
+            if (args.Length > 0)
+            {
+                // Parameter zum einlesen der Datei
+                dateipfad = args[0];
+            }
+            else
+            {
+                Assembly asm = Assembly.GetExecutingAssembly();
+                string path = System.IO.Path.GetDirectoryName(asm.Location);
+                // Standard Input verwenden
+                dateipfad = path+"\\Tests\\TestEingabe.txt";
+            }
             //Einlesen der Daten
             Eingabe eingabe = new Eingabe();
-            eingabe.Einlesen("C:/Users/fwarschewski/Desktop/GoProVorb/GoProVorb/GroProVorb/TestEingabe.txt");
+            eingabe.Einlesen(dateipfad);
+
+            // Ausgabe-Dateinamen festlegen (NameEingabedatei_Ergebnisse.txt)
+            dateipfad = Path.GetDirectoryName(dateipfad)
+               + @"\" + Path.GetFileNameWithoutExtension(dateipfad) + "_Ergebnisse.txt";
+
+
             string[] save = new string[999];
             int i = 0;
             foreach (var generator in eingabe.Zufallsgeneratoren)
@@ -39,7 +59,7 @@ namespace GroProVorb
                     i++;
                 }
             }
-            Ausgabe output = new Ausgabe("C:/Users/fwarschewski/Desktop/GoProVorb/GoProVorb/GroProVorb/TestAusgabe.txt");
+            Ausgabe output = new Ausgabe(dateipfad);
             output.Schreiben(save);
             //Console.WriteLine("LCG Verfahren in der Reihenfolge der Tabelle2 auf Seite 3");
             //var a = new LCG(LCGVerfahrenParameter.AnsiC);

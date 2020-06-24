@@ -18,7 +18,7 @@ namespace Zufallsklassen
         /// <summary>
         /// Berechnet die Anzahl der Bitfolgen mit der Länge K.
         /// </summary>
-        /// <param name="k">Hat in diesem kontext erstmal keine Bedeutung, da über alle k gegangen wird.</param>
+        /// <param name="k">Wenn 0 dann werden alle möglichen k überprüft, ansonsten nur das angegebene k.</param>
         /// <param name="anz">Bestimmt die Sequenzlänge des Tests. Also die Anzahl der untersuchten Zufallszahlen</param>
         /// <returns></returns>
         public double Berechne(int k, int anz)
@@ -46,14 +46,14 @@ namespace Zufallsklassen
                 k = 1;
                 int summe = 0; //Die Summer aller gefundenen Zahlen
                 double differenz = 0; //Die Differenz für jedes k mit Nopt
-                while (summe < anz - 2 || k > anz / 2) //Abbruchbedingungen um Endlosschleifen zu verhindern
+                while (summe < anz - 2 || k > anz / 2) //Abbruchbedingungen um Endlosschleifen zu verhindern, Führt solange aus, bis alle Zahlenketten gefunden wurden
                 {
-                    int counter = 0; //Suche Bitfolgen
-                    int kBitFolgen = 0;
+                    int counter = 0; //Speichert die Anzahl der jetzigen Folge
+                    int kBitFolgen = 0; //Speichert Anzahl der gefundenen Bitfolgen
                     for (int i = 0; i < bitmaske.Length - 1; i++)
                     {
                         counter++;
-                        if (bitmaske[i] != bitmaske[i + 1])
+                        if (bitmaske[i] != bitmaske[i + 1]) //Prüft, ob ein Wechsel stattfindet um den Counter zurückzusetzen und ggfls. eine gefundene Bitfolge mit k Elementen zu speichern
                         {
                             if (counter == k)
                             {
@@ -62,13 +62,13 @@ namespace Zufallsklassen
                             counter = 0;
                         }
                     }
-                    differenz += BerechneNopt(k, anz) - kBitFolgen;
+                    differenz += BerechneNopt(k, anz) - kBitFolgen; //Errechnet die Differenz der gefundenen Zahlenketten mit dem des optimalen Wertes
                     summe += k * kBitFolgen;
                     k++;
                 }
                 return differenz;
             }
-            else
+            else //wie wenn k=0 nur für eine spezifische Zahl
             {   
                 int counter = 0; //Suche Bitfolgen
                 int kBitFolgen = 0;
@@ -88,6 +88,12 @@ namespace Zufallsklassen
             }
         }
 
+        /// <summary>
+        /// Berechnet das optimale Ergebnis für bestimmte Kettenlängen
+        /// </summary>
+        /// <param name="k">Länge der Kette</param>
+        /// <param name="anz">Sequenzlänge</param>
+        /// <returns>Richtwert</returns>
         private double BerechneNopt(int k, int anz)
         {
             double zaehler = (Math.Pow(k, 2) + 3 * k + 1) * anz - (Math.Pow(k, 3) + 3 * Math.Pow(k, 2) - k - 4);
