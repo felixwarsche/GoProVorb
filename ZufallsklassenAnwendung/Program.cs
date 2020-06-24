@@ -63,30 +63,6 @@ namespace GroProVorb
             }
             Ausgabe output = new Ausgabe(dateipfad);
             output.Schreiben(save);
-            //Console.WriteLine("LCG Verfahren in der Reihenfolge der Tabelle2 auf Seite 3");
-            //var a = new LCG(LCGVerfahrenParameter.AnsiC);
-            //Console.WriteLine(a.GeneriereZufallszahl());
-            //var b = new LCG(LCGVerfahrenParameter.MinimalStandard, new Standardnormalverteilung());
-            //Console.WriteLine(b.GeneriereZufallszahl());
-            //var c = new LCG(LCGVerfahrenParameter.RANDU);
-            //Console.WriteLine(c.GeneriereZufallszahl());
-            //var d = new LCG(LCGVerfahrenParameter.SIMSCRIPT);
-            //Console.WriteLine(d.GeneriereZufallszahl());
-            // var e = new LCG(LCGVerfahrenParameter.NAGsLCG);
-            //Console.WriteLine(e.GeneriereZufallszahl());
-            //var f = new LCG(LCGVerfahrenParameter.MaplesLCG);
-            //Console.WriteLine(f.GeneriereZufallszahl());
-
-            //Console.WriteLine("Verwendung des eigenen Zufallsgenerator");
-            //var date = new Datumsbasiert();
-            //Console.WriteLine(date.GeneriereZufallszahl());
-
-            //Console.WriteLine("GüteTests");
-            //var t = new SerielleAutokorrelation(a);
-            //Console.WriteLine(t.Berechne(5,20));
-            //var u = new SequenzUpDownTest(a);
-            //Console.WriteLine(t.Berechne(5,20));
-            Console.ReadKey();
         }
     }
 }
