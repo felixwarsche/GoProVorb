@@ -41,19 +41,19 @@ namespace GroProVorb
                     if (verfahren == GüteTestverfahren.SerielleAutokorrelation)
                     {
                         var v = new SerielleAutokorrelation(generator);
-                        ausgabe = v.Berechne(eingabe.k, eingabe.sequenzlänge);
+                        ausgabe = v.Berechne(eingabe.K, eingabe.Sequenzlänge);
                     }
                     else if (verfahren == GüteTestverfahren.SequenzUpDown)
                     {
                         var v = new SequenzUpDownTest(generator);
-                        ausgabe = v.Berechne(eingabe.k, eingabe.sequenzlänge);
+                        ausgabe = v.Berechne(eingabe.K, eingabe.Sequenzlänge);
                     }
                     else if (verfahren == GüteTestverfahren.Eigen)
                     {
                         var v = new EigenesGüteTestverfahren(generator);
-                        ausgabe = v.Berechne(eingabe.k, eingabe.sequenzlänge);
+                        ausgabe = v.Berechne(eingabe.K, eingabe.Sequenzlänge);
                     }
-                    string a = "Generator: " + generator.getArt().ToString() + ", Verfahren: " + verfahren.ToString() + ", Wert: " + ausgabe;
+                    string a = "Generator: " + generator.GetArt().ToString() + ", Verfahren: " + verfahren.ToString() + ", Wert: " + ausgabe;
                     Console.WriteLine(a);
                     save[i] = a;
                     i++;

@@ -7,17 +7,17 @@ namespace GroProVorb
 {
     public class Ausgabe
     {
-        string pfad;
+        string Pfad;
         public Ausgabe(string pfad)
         {
-            this.pfad = pfad;
+            this.Pfad = pfad;
         }
 
         public void Schreiben(string[] ergebnisse)
         {
             try
             {
-                using (var writer = new StreamWriter(pfad))
+                using (var writer = new StreamWriter(Pfad))
                 {
                     foreach(var ergebniss in ergebnisse)
                     {

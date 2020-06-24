@@ -1,0 +1,14 @@
+C:\Users\fwarschewski\Desktop\GoProVorb\GoProVorb\GroProVorb\bin\Release\netcoreapp2.1\GroProVorb.deps.json
+C:\Users\fwarschewski\Desktop\GoProVorb\GoProVorb\GroProVorb\bin\Release\netcoreapp2.1\GroProVorb.runtimeconfig.json
+C:\Users\fwarschewski\Desktop\GoProVorb\GoProVorb\GroProVorb\bin\Release\netcoreapp2.1\GroProVorb.runtimeconfig.dev.json
+C:\Users\fwarschewski\Desktop\GoProVorb\GoProVorb\GroProVorb\bin\Release\netcoreapp2.1\GroProVorb.dll
+C:\Users\fwarschewski\Desktop\GoProVorb\GoProVorb\GroProVorb\bin\Release\netcoreapp2.1\GroProVorb.pdb
+C:\Users\fwarschewski\Desktop\GoProVorb\GoProVorb\GroProVorb\bin\Release\netcoreapp2.1\Zufallsklassen.dll
+C:\Users\fwarschewski\Desktop\GoProVorb\GoProVorb\GroProVorb\bin\Release\netcoreapp2.1\Zufallsklassen.pdb
+C:\Users\fwarschewski\Desktop\GoProVorb\GoProVorb\GroProVorb\obj\Release\netcoreapp2.1\GroProVorb.csprojAssemblyReference.cache
+C:\Users\fwarschewski\Desktop\GoProVorb\GoProVorb\GroProVorb\obj\Release\netcoreapp2.1\GroProVorb.csproj.CoreCompileInputs.cache
+C:\Users\fwarschewski\Desktop\GoProVorb\GoProVorb\GroProVorb\obj\Release\netcoreapp2.1\GroProVorb.AssemblyInfoInputs.cache
+C:\Users\fwarschewski\Desktop\GoProVorb\GoProVorb\GroProVorb\obj\Release\netcoreapp2.1\GroProVorb.AssemblyInfo.cs
+C:\Users\fwarschewski\Desktop\GoProVorb\GoProVorb\GroProVorb\obj\Release\netcoreapp2.1\GroProVorb.csproj.CopyComplete
+C:\Users\fwarschewski\Desktop\GoProVorb\GoProVorb\GroProVorb\obj\Release\netcoreapp2.1\GroProVorb.dll
+C:\Users\fwarschewski\Desktop\GoProVorb\GoProVorb\GroProVorb\obj\Release\netcoreapp2.1\GroProVorb.pdb

@@ -1,0 +1,9 @@
+C:\Users\fwarschewski\Desktop\GoProVorb\GoProVorb\Zufallsklassen\bin\Release\netstandard2.0\Zufallsklassen.deps.json
+C:\Users\fwarschewski\Desktop\GoProVorb\GoProVorb\Zufallsklassen\bin\Release\netstandard2.0\Zufallsklassen.dll
+C:\Users\fwarschewski\Desktop\GoProVorb\GoProVorb\Zufallsklassen\bin\Release\netstandard2.0\Zufallsklassen.pdb
+C:\Users\fwarschewski\Desktop\GoProVorb\GoProVorb\Zufallsklassen\obj\Release\netstandard2.0\Zufallsklassen.csprojAssemblyReference.cache
+C:\Users\fwarschewski\Desktop\GoProVorb\GoProVorb\Zufallsklassen\obj\Release\netstandard2.0\Zufallsklassen.csproj.CoreCompileInputs.cache
+C:\Users\fwarschewski\Desktop\GoProVorb\GoProVorb\Zufallsklassen\obj\Release\netstandard2.0\Zufallsklassen.AssemblyInfoInputs.cache
+C:\Users\fwarschewski\Desktop\GoProVorb\GoProVorb\Zufallsklassen\obj\Release\netstandard2.0\Zufallsklassen.AssemblyInfo.cs
+C:\Users\fwarschewski\Desktop\GoProVorb\GoProVorb\Zufallsklassen\obj\Release\netstandard2.0\Zufallsklassen.dll
+C:\Users\fwarschewski\Desktop\GoProVorb\GoProVorb\Zufallsklassen\obj\Release\netstandard2.0\Zufallsklassen.pdb

@@ -6,7 +6,7 @@ namespace Zufallsklassen
 {
     public class Datumsbasiert : Zufallsbibliothek
     {
-        Generatorenklasse art;
+        Generatorenklasse Art;
         int i;
         double m;
 
@@ -14,7 +14,7 @@ namespace Zufallsklassen
         {
             i = 0;
             m = 1000;
-            art = Generatorenklasse.Datumsbasiert;
+            Art = Generatorenklasse.Datumsbasiert;
         }
 
         public Verteilung Verteilung { get; set; }
@@ -40,12 +40,12 @@ namespace Zufallsklassen
             return Verteilung.Transformiere(x);
         }
 
-        public Generatorenklasse getArt()
+        public Generatorenklasse GetArt()
         {
-            return this.art;
+            return this.Art;
         }
 
-        public double getM()
+        public double GetM()
         {
             return this.m;
         }

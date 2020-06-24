@@ -8,8 +8,8 @@ namespace Zufallsklassen
     {
         double GeneriereZufallszahl();
         double GeneriereGleichverteilteZufallszahl01();
-        Generatorenklasse getArt();
-        double getM();
+        Generatorenklasse GetArt();
+        double GetM();
         Verteilung Verteilung {get;set; }
     }
 

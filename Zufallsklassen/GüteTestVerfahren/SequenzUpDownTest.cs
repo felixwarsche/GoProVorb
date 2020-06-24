@@ -6,13 +6,13 @@ namespace Zufallsklassen
 {
     public class SequenzUpDownTest : GüteTests
     {
-        Zufallsbibliothek bibliothek;
-        string name;
+        Zufallsbibliothek Bibliothek;
+        string Name;
 
         public SequenzUpDownTest(Zufallsbibliothek bib)
         {
-            this.name = "SequenzUpDownTest";
-            this.bibliothek = bib;
+            this.Name = "SequenzUpDownTest";
+            this.Bibliothek = bib;
         }
 
         /// <summary>
@@ -26,7 +26,7 @@ namespace Zufallsklassen
             double[] zahlen = new double[anz];
             for (int i = 0; i < anz; i++) //Erstelle Zahlenarray
             {
-                zahlen[i] = bibliothek.GeneriereZufallszahl();
+                zahlen[i] = Bibliothek.GeneriereZufallszahl();
             }
             int[] bitmaske = new int[zahlen.Length];
             for (int i = 0; i < zahlen.Length - 1; i++) //Erstelle Bitmaske

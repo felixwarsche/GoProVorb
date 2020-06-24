@@ -6,13 +6,13 @@ namespace Zufallsklassen
 {
     public class EigenesGüteTestverfahren : GüteTests
     {
-        Zufallsbibliothek bibliothek;
-        string name;
+        Zufallsbibliothek Bibliothek;
+        string Name;
 
         public EigenesGüteTestverfahren(Zufallsbibliothek bib)
         {
-            this.name = "Eigen";
-            this.bibliothek = bib;
+            this.Name = "Eigen";
+            this.Bibliothek = bib;
         }
 
         /// <summary>
@@ -26,7 +26,7 @@ namespace Zufallsklassen
             double[] zahlen = new double[anz]; //Zufallszahlen erstellen
             for (int i = 0; i < anz; i++)
             {
-                zahlen[i] = bibliothek.GeneriereZufallszahl();
+                zahlen[i] = Bibliothek.GeneriereZufallszahl();
             }
             int[] bitmaske = new int[zahlen.Length]; //Bitmaske erstellen
             for (int i = 0; i < zahlen.Length - 1; i++)

@@ -10,9 +10,9 @@ namespace GroProVorb
     {
         public List<Zufallsbibliothek> Zufallsgeneratoren;
         public List<GüteTestverfahren> GüteTestVerfahren;
-        public int sequenzlänge;
-        public int k;
-        public V verteilung;
+        public int Sequenzlänge;
+        public int K;
+        public V Verteilung;
 
         public void Einlesen(string pfad)
         {
@@ -25,11 +25,11 @@ namespace GroProVorb
                     string line3 = reader.ReadLine(); //SampleSize-Groeße der generierten Arrays
                     string line4 = reader.ReadLine(); //Sequenzlänge der testverfahren
                     string line5 = reader.ReadLine(); //Angabe ob Gleichverteilt oder Standardnormalverteilt
-                    verteilung = line5 == "0" ? V.Gleichverteilung : V.Standardnormalverteilung;
+                    Verteilung = line5 == "0" ? V.Gleichverteilung : V.Standardnormalverteilung;
                     GeneratorenKonvertieren(line1);
                     VerfahrenKonvertieren(line2);
-                    sequenzlänge = int.Parse(line3);
-                    k = int.Parse(line4);
+                    Sequenzlänge = int.Parse(line3);
+                    K = int.Parse(line4);
                 }
             }
             catch (IOException e)
@@ -74,7 +74,7 @@ namespace GroProVorb
             }
             foreach(var generator in Zufallsgeneratoren)
             {
-                generator.Verteilung = verteilung == V.Gleichverteilung ? (Verteilung) new Gleichverteilung() : new Standardnormalverteilung(generator);
+                generator.Verteilung = Verteilung == V.Gleichverteilung ? (Verteilung) new Gleichverteilung() : new Standardnormalverteilung(generator);
             }
         }
 

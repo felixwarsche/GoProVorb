@@ -6,16 +6,16 @@ namespace Zufallsklassen
 {
     public class Standardnormalverteilung : Verteilung
     {
-        private Zufallsbibliothek generator;
-        private int[] verteilungsparameter;
+        private Zufallsbibliothek Generator;
+        private int[] Verteilungsparameter;
 
         public V Art { get; private set; }
         public double Mittelwert { get { return 0; } }
 
         public Standardnormalverteilung(Zufallsbibliothek generator)
         {
-            this.generator = generator;
-            verteilungsparameter = new int[] { 0, 1 };
+            this.Generator = generator;
+            Verteilungsparameter = new int[] { 0, 1 };
             Art = V.Standardnormalverteilung;
         }
 
@@ -40,12 +40,12 @@ namespace Zufallsklassen
         /// <returns>Returnt eine von den beiden generierten unabhängigen Standardnormalverteilten Zufallszahlen (x*p; y*p) Skaliert mit p</returns>
         public double Transformiere(double x)
         {
-            x = x * 2 - 1; // Aus [-1,1] Verteilung ändern
+            x = x * 2 - 1; // In [-1,1] Verteilung ändern
             double rand = 0;
             double q = 0;
             do
             {
-                rand = generator.GeneriereGleichverteilteZufallszahl01();
+                rand = Generator.GeneriereGleichverteilteZufallszahl01();
                 rand = rand * 2 - 1;
                 q = Math.Pow(x, 2) + Math.Pow(rand, 2);
             } while ( q == 0 || q >= 1);
