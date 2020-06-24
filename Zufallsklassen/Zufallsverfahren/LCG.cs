@@ -8,12 +8,12 @@ namespace Zufallsklassen
     {
         private Generatorenklasse art;
         private double[] parameter;
-        private Verteilung verteilung;
+
+        public Verteilung Verteilung { get; set; } = new Gleichverteilung();
 
         public LCG(Generatorenklasse art ,double[] p)
         {
             this.art = art;
-            verteilung = new Gleichverteilung();
             parameter = p;
         }
 
@@ -21,7 +21,7 @@ namespace Zufallsklassen
         {
             this.art = art;
             parameter = p;
-            verteilung = v;
+            Verteilung = v;
         }
 
         /// <summary>
@@ -32,27 +32,16 @@ namespace Zufallsklassen
         /// <returns>Zufallszahl mit gegebener Verteilung</returns>
         public double GeneriereZufallszahl()
         {
-            double x = errechne();
+            double x = GeneriereGleichverteilteZufallszahl01();
 
-            if (verteilung.getArt() == V.Standardnormalverteilung)
-            {
-                double q = 0;
-                double y = 0;
-                do
-                {
-                    y = errechne() * Math.Sqrt(1 - Math.Pow(x, 2));
-                    q = Math.Pow(x, 2) + Math.Pow(y, 2);
-                } while (q == 0 || q >= 1);
-                x = verteilung.Transformiere(x, y);
-            }
-            return x;
+            return Verteilung.Transformiere(x);
         }
 
         /// <summary>
         /// Berechnet eine Gleichverteilte Zufallszahl nach dem Prinzip der erhaltenen Parameter
         /// </summary>
         /// <returns>Zufallszahl</returns>
-        private double errechne()
+        public double GeneriereGleichverteilteZufallszahl01()
         {
             double m = parameter[0]; double a = parameter[1]; double c = parameter[2]; double x = parameter[3];
             double wertBisMudolo = ((a * x) + c) % m;

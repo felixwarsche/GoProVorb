@@ -8,7 +8,7 @@ namespace Zufallsklassen
     {
         Zufallsbibliothek bibliothek;
         string name;
-        
+
         public SequenzUpDownTest(Zufallsbibliothek bib)
         {
             this.name = "SequenzUpDownTest";
@@ -24,12 +24,12 @@ namespace Zufallsklassen
         public double Berechne(int k, int anz)
         {
             double[] zahlen = new double[anz];
-            for(int i = 0; i < anz; i++) //Erstelle Zahlenarray
+            for (int i = 0; i < anz; i++) //Erstelle Zahlenarray
             {
                 zahlen[i] = bibliothek.GeneriereZufallszahl();
             }
             int[] bitmaske = new int[zahlen.Length];
-            for(int i=0; i<zahlen.Length-1; i++) //Erstelle Bitmaske
+            for (int i = 0; i < zahlen.Length - 1; i++) //Erstelle Bitmaske
             {
                 if (zahlen[i] < zahlen[i + 1])
                 {
@@ -41,50 +41,41 @@ namespace Zufallsklassen
                 }
             }
 
+            Dictionary<int, int> kettenlaengen = new Dictionary<int, int>();
+            int kettenlaenge = 1; //Speichert die Anzahl der jetzigen Folge
+            int vorherigesBit = bitmaske[0];
+            for (int i = 1; i < bitmaske.Length; i++)
+            {
+                if (vorherigesBit == bitmaske[i]) 
+                {
+                    kettenlaenge++;
+                }
+                else //Prüft, ob ein Wechsel stattfindet um den Counter zurückzusetzen und ggfls. eine gefundene Bitfolge mit k Elementen zu speichern
+                {
+                    if (kettenlaengen.ContainsKey(kettenlaenge))
+                    {
+                        kettenlaengen[kettenlaenge]++;
+                    }
+                    else
+                    {
+                        kettenlaengen[kettenlaenge] = 1;
+                    }
+                    kettenlaenge = 1;
+                    vorherigesBit = bitmaske[i];
+                }
+            }
             if (k == 0)
             {
-                k = 1;
-                int summe = 0; //Die Summer aller gefundenen Zahlen
-                double differenz = 0; //Die Differenz für jedes k mit Nopt
-                while (summe < anz - 2 || k > anz / 2) //Abbruchbedingungen um Endlosschleifen zu verhindern, Führt solange aus, bis alle Zahlenketten gefunden wurden
+                double differenz = 0;
+                foreach (var eintrag in kettenlaengen)
                 {
-                    int counter = 0; //Speichert die Anzahl der jetzigen Folge
-                    int kBitFolgen = 0; //Speichert Anzahl der gefundenen Bitfolgen
-                    for (int i = 0; i < bitmaske.Length - 1; i++)
-                    {
-                        counter++;
-                        if (bitmaske[i] != bitmaske[i + 1]) //Prüft, ob ein Wechsel stattfindet um den Counter zurückzusetzen und ggfls. eine gefundene Bitfolge mit k Elementen zu speichern
-                        {
-                            if (counter == k)
-                            {
-                                kBitFolgen++;
-                            }
-                            counter = 0;
-                        }
-                    }
-                    differenz += BerechneNopt(k, anz) - kBitFolgen; //Errechnet die Differenz der gefundenen Zahlenketten mit dem des optimalen Wertes
-                    summe += k * kBitFolgen;
-                    k++;
+                    differenz += Math.Abs(BerechneNopt(eintrag.Key, anz) - eintrag.Value); //Errechnet die Differenz der gefundenen Zahlenketten mit dem des optimalen Wertes
                 }
                 return differenz;
             }
-            else //wie wenn k=0 nur für eine spezifische Zahl
-            {   
-                int counter = 0; //Suche Bitfolgen
-                int kBitFolgen = 0;
-                for (int i = 0; i < bitmaske.Length - 1; i++)
-                {
-                    counter++;
-                    if (bitmaske[i] != bitmaske[i + 1])
-                    {
-                        if (counter == k)
-                        {
-                            kBitFolgen++;
-                        }
-                        counter = 0;
-                    }
-                }
-                return BerechneNopt(k, anz) - kBitFolgen;
+            else
+            {
+                return Math.Abs(BerechneNopt(k, anz) - kettenlaengen[k]);
             }
         }
 

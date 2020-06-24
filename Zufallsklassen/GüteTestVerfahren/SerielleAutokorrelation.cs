@@ -16,20 +16,6 @@ namespace Zufallsklassen
         }
 
         /// <summary>
-        /// Berechnet den Mittelwert für das gegebene Zahlen-Array
-        /// </summary>
-        /// <returns>Mittelwert</returns>
-        private double BerechneMittelwert(double[] zahlen)
-        {
-            double summe = 0;
-            foreach(var zahl in zahlen)
-            {
-                summe += zahl;
-            }
-            return summe / zahlen.Length;
-        }
-
-        /// <summary>
         /// Errechnet den Korrelationswert für das Zufallsgenerierte Array
         /// </summary>
         /// <param name="k">Abstand der verglichenen Zufallszahlen</param>
@@ -44,11 +30,11 @@ namespace Zufallsklassen
 
             if(k == 0)//wenn kein spezifisches k gewählt wurde, wird ein zufälliger Abstand zweier Zahlen ausgerechnet
             {
-                int punkt1 = (int)(bibliothek.GeneriereZufallszahl() * anz);
-                int punkt2 = (int)(bibliothek.GeneriereZufallszahl() * anz);
-                k = punkt1 - punkt2;
+                int punkt1 = (int)(bibliothek.GeneriereGleichverteilteZufallszahl01() * anz);
+                int punkt2 = (int)(bibliothek.GeneriereGleichverteilteZufallszahl01() * anz);
+                k = Math.Abs(punkt1 - punkt2);
             }
-            double mittelwert = BerechneMittelwert(zahlen); // Berechnet Mittelwert aus allen Zufallszahlen
+            double mittelwert = bibliothek.Verteilung.Mittelwert; // Berechnet Mittelwert aus allen Zufallszahlen
             double zaehler = 0;
             double nenner = 0;
             int j = 0;

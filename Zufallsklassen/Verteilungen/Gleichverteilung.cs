@@ -6,21 +6,17 @@ namespace Zufallsklassen
 {
     public class Gleichverteilung : Verteilung
     {
-        private V art;
+        public V Art { get; private set; }
 
+        public double Mittelwert { get { return 0.5; } }
         public Gleichverteilung()
         {
-            art = V.Gleichverteilung;
+            Art = V.Gleichverteilung;
         }
 
-        public V getArt()
+        public double Transformiere(double x)
         {
-            return art;
-        }
-
-        public double Transformiere(double x, double y)
-        {
-            throw new NotImplementedException();
+            return x;
         }
     }
 }

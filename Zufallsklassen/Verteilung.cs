@@ -6,8 +6,9 @@ namespace Zufallsklassen
 {
     public interface Verteilung
     {
-        double Transformiere(double x, double y);
-        V getArt();
+        double Transformiere(double x);
+        V Art { get; }
+        double Mittelwert { get; }
     }
 
     /// <summary>

@@ -1,21 +1,21 @@
-Generator: AnsiC, Verfahren: SerielleAutokorrelation, Wert: 0,2230916693942
-Generator: AnsiC, Verfahren: SequenzUpDown, Wert: -1,10753968253968
-Generator: AnsiC, Verfahren: Eigen, Wert: 0,66
-Generator: MinimalStandard, Verfahren: SerielleAutokorrelation, Wert: 0,00101662478645286
-Generator: MinimalStandard, Verfahren: SequenzUpDown, Wert: 1,98467261904762
-Generator: MinimalStandard, Verfahren: Eigen, Wert: 0,72
-Generator: SIMSCRIPT, Verfahren: SerielleAutokorrelation, Wert: -0,268656978353056
-Generator: SIMSCRIPT, Verfahren: SequenzUpDown, Wert: 0,358333333333335
-Generator: SIMSCRIPT, Verfahren: Eigen, Wert: 0,6
-Generator: NAGsLCG, Verfahren: SerielleAutokorrelation, Wert: -0,417469314465356
-Generator: NAGsLCG, Verfahren: SequenzUpDown, Wert: -7,15
-Generator: NAGsLCG, Verfahren: Eigen, Wert: 0,74
-
-
-
-
-
-
+Generator: AnsiC, Verfahren: SerielleAutokorrelation, Wert: -0,0165948559328544
+Generator: AnsiC, Verfahren: SequenzUpDown, Wert: 1352,18129960318
+Generator: AnsiC, Verfahren: Eigen, Wert: 0,6633
+Generator: MinimalStandard, Verfahren: SerielleAutokorrelation, Wert: 0,0109489662428361
+Generator: MinimalStandard, Verfahren: SequenzUpDown, Wert: 319,985300374778
+Generator: MinimalStandard, Verfahren: Eigen, Wert: 0,66661
+Generator: RANDU, Verfahren: SerielleAutokorrelation, Wert: 0,00183827670862656
+Generator: RANDU, Verfahren: SequenzUpDown, Wert: 242,715972773367
+Generator: RANDU, Verfahren: Eigen, Wert: 0,66691
+Generator: SIMSCRIPT, Verfahren: SerielleAutokorrelation, Wert: -0,00129721274039785
+Generator: SIMSCRIPT, Verfahren: SequenzUpDown, Wert: 1631,30682815256
+Generator: SIMSCRIPT, Verfahren: Eigen, Wert: 0,6659
+Generator: NAGsLCG, Verfahren: SerielleAutokorrelation, Wert: -0,505866468046382
+Generator: NAGsLCG, Verfahren: SequenzUpDown, Wert: 14998,15
+Generator: NAGsLCG, Verfahren: Eigen, Wert: 0,74998
+Generator: MaplesLCG, Verfahren: SerielleAutokorrelation, Wert: -0,00239733331442947
+Generator: MaplesLCG, Verfahren: SequenzUpDown, Wert: 333,362659281304
+Generator: MaplesLCG, Verfahren: Eigen, Wert: 0,66642
 
 
 
