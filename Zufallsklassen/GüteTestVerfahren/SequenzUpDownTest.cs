@@ -41,11 +41,35 @@ namespace Zufallsklassen
                 }
             }
 
-            k = 1;
-            int summe = 0; //Die Summer aller gefundenen Zahlen
-            double differenz = 0; //Die Differenz für jedes k mit Nopt
-            while(summe < anz - 2 || k > anz/2) //Abbruchbedingungen um Endlosschleifen zu verhindern
+            if (k == 0)
             {
+                k = 1;
+                int summe = 0; //Die Summer aller gefundenen Zahlen
+                double differenz = 0; //Die Differenz für jedes k mit Nopt
+                while (summe < anz - 2 || k > anz / 2) //Abbruchbedingungen um Endlosschleifen zu verhindern
+                {
+                    int counter = 0; //Suche Bitfolgen
+                    int kBitFolgen = 0;
+                    for (int i = 0; i < bitmaske.Length - 1; i++)
+                    {
+                        counter++;
+                        if (bitmaske[i] != bitmaske[i + 1])
+                        {
+                            if (counter == k)
+                            {
+                                kBitFolgen++;
+                            }
+                            counter = 0;
+                        }
+                    }
+                    differenz += BerechneNopt(k, anz) - kBitFolgen;
+                    summe += k * kBitFolgen;
+                    k++;
+                }
+                return differenz;
+            }
+            else
+            {   
                 int counter = 0; //Suche Bitfolgen
                 int kBitFolgen = 0;
                 for (int i = 0; i < bitmaske.Length - 1; i++)
@@ -60,12 +84,8 @@ namespace Zufallsklassen
                         counter = 0;
                     }
                 }
-                differenz += BerechneNopt(k, anz) - kBitFolgen;
-                summe += k * kBitFolgen;
-                k++;
+                return BerechneNopt(k, anz) - kBitFolgen;
             }
-
-            return differenz;
         }
 
         private double BerechneNopt(int k, int anz)
