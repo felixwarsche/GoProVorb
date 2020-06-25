@@ -28,7 +28,7 @@ namespace Zufallsklassen
             {
                 zahlen[i] = Bibliothek.GeneriereZufallszahl();
             }
-            int[] bitmaske = new int[zahlen.Length];
+            int[] bitmaske = new int[zahlen.Length-1];
             for (int i = 0; i < zahlen.Length - 1; i++) //Erstelle Bitmaske
             {
                 if (zahlen[i] < zahlen[i + 1])

@@ -3,9 +3,9 @@ Die angewandte Verteilung der Zufallszahlen ist die Gleichverteilung
 Generator: AnsiC, Verfahren: SequenzUpDown, Wert: 38,8062996031746
 Generator: MinimalStandard, Verfahren: SequenzUpDown, Wert: 70,5118551587302
 Generator: RANDU, Verfahren: SequenzUpDown, Wert: 35,4892757936508
-Generator: SIMSCRIPT, Verfahren: SequenzUpDown, Wert: 23,4694444444444
-Generator: NAGsLCG, Verfahren: SequenzUpDown, Wert: 150,15
-Generator: MaplesLCG, Verfahren: SequenzUpDown, Wert: 53,5062996031746
+Generator: SIMSCRIPT, Verfahren: SequenzUpDown, Wert: 24,4694444444444
+Generator: NAGsLCG, Verfahren: SequenzUpDown, Wert: 149,15
+Generator: MaplesLCG, Verfahren: SequenzUpDown, Wert: 54,5062996031746
 
 
 
