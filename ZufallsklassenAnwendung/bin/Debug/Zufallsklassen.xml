@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Zufallsklassen</name>
+    </assembly>
+    <members>
+        <member name="M:Zufallsklassen.EigenesGüteTestverfahren.Berechne(System.Int32,System.Int32)">
+            <summary>
+            Angelehnt an die SequenzUpDown werden hier die Wechsel der Größen geprüft und dann im Anschluss durch die Anzahl der möglichen Wechsel dividiert.
+            Soll Aufschluss über die mittleren Wechsel geben. Wenn die Werte um die 0,5 oder höher liegen, liegt eine gute Güte vor! Ansonsten eine schlechte, da die Folgen sehr lang sind.
+            </summary>
+            <param name="k">Sequenzlänge</param>
+            <returns>Den Mittelwert aller Kettenwechsel.</returns>
+        </member>
+        <member name="M:Zufallsklassen.SequenzUpDownTest.Berechne(System.Int32,System.Int32)">
+            <summary>
+            Berechnet die Anzahl der Bitfolgen mit der Länge K.
+            </summary>
+            <param name="k">Wenn 0 dann werden alle möglichen k überprüft, ansonsten nur das angegebene k.</param>
+            <param name="anz">Bestimmt die Sequenzlänge des Tests. Also die Anzahl der untersuchten Zufallszahlen</param>
+            <returns></returns>
+        </member>
+        <member name="M:Zufallsklassen.SequenzUpDownTest.BerechneNopt(System.Int32,System.Int32)">
+            <summary>
+            Berechnet das optimale Ergebnis für bestimmte Kettenlängen
+            </summary>
+            <param name="k">Länge der Kette</param>
+            <param name="anz">Sequenzlänge</param>
+            <returns>Richtwert</returns>
+        </member>
+        <member name="M:Zufallsklassen.SerielleAutokorrelation.Berechne(System.Int32,System.Int32)">
+            <summary>
+            Errechnet den Korrelationswert für das Zufallsgenerierte Array
+            </summary>
+            <param name="k">Abstand der verglichenen Zufallszahlen</param>
+            <returns>Korrelationswert des Zufallszahlengenerators</returns>
+        </member>
+        <member name="T:Zufallsklassen.V">
+            <summary>
+            Beschreibt die Art der Verteilung
+            </summary>
+        </member>
+        <member name="M:Zufallsklassen.Standardnormalverteilung.Transformiere(System.Double,System.Double)">
+            <summary>
+            Polarmethode wie im Arbeitsbogen beschrieben
+            </summary>
+            <param name="x">Zufallszahl</param>
+            <param name="b">Bibliothek um Zufallszahlen zu generieren</param>
+            <returns>Returnt eine von den beiden generierten unabhängigen Standardnormalverteilten Zufallszahlen (x*p; y*p) Skaliert mit p</returns>
+        </member>
+        <member name="M:Zufallsklassen.Standardnormalverteilung.Transformiere(System.Double)">
+            <summary>
+            Polarmethode wie im Arbeitsbogen beschrieben
+            </summary>
+            <param name="x">Zufallszahl</param>
+            <param name="b">Bibliothek um Zufallszahlen zu generieren</param>
+            <returns>Returnt eine von den beiden generierten unabhängigen Standardnormalverteilten Zufallszahlen (x*p; y*p) Skaliert mit p</returns>
+        </member>
+        <member name="M:Zufallsklassen.Datumsbasiert.GeneriereZufallszahl">
+            <summary>
+            Generiert auf Basis der jetzigen Zeit und der Systemzeit eine Zufallszahl[0,1] in Abhängigkeit der i-ten Zufallszahl, welche generiert wird.
+            </summary>
+            <returns>Zufallszahl im Intervall 0-1</returns>
+        </member>
+        <member name="M:Zufallsklassen.LCG.GeneriereZufallszahl">
+            <summary>
+            Generiert eine Zufallszahl in Abhängikeit der gegebenen Parameter und speichert den xi-Parameter nach Schleifendurchlauf.
+            
+            Es wird auch abgefragt, welche Verteilung hier angewendet werden soll und dann ggflls. transformiert.
+            </summary>
+            <returns>Zufallszahl mit gegebener Verteilung</returns>
+        </member>
+        <member name="M:Zufallsklassen.LCG.GeneriereGleichverteilteZufallszahl01">
+            <summary>
+            Berechnet eine Gleichverteilte Zufallszahl nach dem Prinzip der erhaltenen Parameter
+            </summary>
+            <returns>Zufallszahl</returns>
+        </member>
+    </members>
+</doc>

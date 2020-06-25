@@ -212,3 +212,4 @@ C:\Users\matse\source\repos\GroProVorb\ZufallsklassenAnwendung\obj\Debug\Zufalls
 C:\Users\matse\source\repos\GroProVorb\ZufallsklassenAnwendung\obj\Debug\ZufallsklassenAnwendung.csproj.CopyComplete
 C:\Users\matse\source\repos\GroProVorb\ZufallsklassenAnwendung\obj\Debug\ZufallsklassenAnwendung.exe
 C:\Users\matse\source\repos\GroProVorb\ZufallsklassenAnwendung\obj\Debug\ZufallsklassenAnwendung.pdb
+C:\Users\fwarschewski\Desktop\GoProVorb\GoProVorb\ZufallsklassenAnwendung\bin\Debug\Zufallsklassen.xml

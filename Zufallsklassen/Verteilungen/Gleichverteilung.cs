@@ -4,6 +4,9 @@ using System.Text;
 
 namespace Zufallsklassen
 {
+    /// <summary>
+    /// Erzeugt eine Gleichverteilung
+    /// </summary>
     public class Gleichverteilung : Verteilung
     {
         public V Art { get; private set; }

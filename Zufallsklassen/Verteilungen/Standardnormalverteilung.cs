@@ -4,6 +4,9 @@ using System.Text;
 
 namespace Zufallsklassen
 {
+    /// <summary>
+    /// Erzeugt eine Standardnormalverteilung
+    /// </summary>
     public class Standardnormalverteilung : Verteilung
     {
         private Zufallsbibliothek Generator;
@@ -12,6 +15,10 @@ namespace Zufallsklassen
         public V Art { get; private set; }
         public double Mittelwert { get { return 0; } }
 
+        /// <summary>
+        /// Erzeugt eine Instanz einer Standardnormalverteilung
+        /// </summary>
+        /// <param name="generator">Zufallszahlengenerator</param>
         public Standardnormalverteilung(Zufallsbibliothek generator)
         {
             this.Generator = generator;
