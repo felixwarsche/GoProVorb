@@ -4,11 +4,18 @@ using System.Text;
 
 namespace Zufallsklassen
 {
+    /// <summary>
+    /// Erzeugt ein eigenes Güte-Testverfahren
+    /// </summary>
     public class EigenesGüteTestverfahren : GüteTests
     {
         Zufallsbibliothek Bibliothek;
         string Name;
 
+        /// <summary>
+        /// Erstellt die Instanz der eigenen
+        /// </summary>
+        /// <param name="bib"></param>
         public EigenesGüteTestverfahren(Zufallsbibliothek bib)
         {
             this.Name = "Eigen";

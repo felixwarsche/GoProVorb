@@ -16,4 +16,3 @@ C:\Users\matse\source\repos\GroProVorb\Zufallsklassen\obj\Debug\netstandard2.0\Z
 C:\Users\matse\source\repos\GroProVorb\Zufallsklassen\obj\Debug\netstandard2.0\Zufallsklassen.dll
 C:\Users\matse\source\repos\GroProVorb\Zufallsklassen\obj\Debug\netstandard2.0\Zufallsklassen.pdb
 C:\Users\fwarschewski\Desktop\GoProVorb\GoProVorb\Zufallsklassen\bin\Debug\netstandard2.0\Zufallsklassen.xml
-C:\Users\fwarschewski\Desktop\GoProVorb\GoProVorb\Zufallsklassen\obj\Debug\netstandard2.0\Zufallsklassen.csprojAssemblyReference.cache

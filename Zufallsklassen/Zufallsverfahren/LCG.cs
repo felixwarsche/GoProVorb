@@ -4,6 +4,9 @@ using System.Text;
 
 namespace Zufallsklassen
 {
+    /// <summary>
+    /// Erzeugt einen Linearen Kongruenz-Generator
+    /// </summary>
     public class LCG : Zufallsbibliothek
     {
         private Generatorenklasse Art;
@@ -11,17 +14,15 @@ namespace Zufallsklassen
 
         public Verteilung Verteilung { get; set; } = new Gleichverteilung();
 
+        /// <summary>
+        /// Erstellt eine Instanz eines LCGs
+        /// </summary>
+        /// <param name="art">Zufallszahlengenerator</param>
+        /// <param name="p">Parameter</param>
         public LCG(Generatorenklasse art ,double[] p)
         {
             this.Art = art;
             Parameter = p;
-        }
-
-        public LCG(Generatorenklasse art, double[] p, Verteilung v)
-        {
-            this.Art = art;
-            Parameter = p;
-            Verteilung = v;
         }
 
         /// <summary>
@@ -50,18 +51,28 @@ namespace Zufallsklassen
             return wert;
         }
 
+        /// <summary>
+        /// Gibt das Modulo zurück
+        /// </summary>
+        /// <returns>Modulo</returns>
         public double GetM()
         {
             return this.Parameter[0];
         }
 
+        /// <summary>
+        /// Gibt die Generatorenklasse zurück
+        /// </summary>
+        /// <returns>Generatorenklasse</returns>
         public Generatorenklasse GetArt()
         {
             return this.Art;
         }
     }
 
-
+    /// <summary>
+    /// Konstanten-Klasse für die verschiedenen LCG-Verfahrensparameter
+    /// </summary>
     public class LCGVerfahrenParameter
     {
         public static readonly double[] AnsiC = new double[] { Math.Pow(2, 31), 1103515245, 12345, 12345 };

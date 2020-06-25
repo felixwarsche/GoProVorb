@@ -4,11 +4,18 @@ using System.Text;
 
 namespace Zufallsklassen
 {
+    /// <summary>
+    /// Erzeugt eine Serielle Autokorrelation
+    /// </summary>
     public class SerielleAutokorrelation : GüteTests
     {
         Zufallsbibliothek Bibliothek;
         string Name;
         
+        /// <summary>
+        /// Erstellt die Instanz einer seriellen Autokorrelation
+        /// </summary>
+        /// <param name="b"></param>
         public SerielleAutokorrelation(Zufallsbibliothek b)
         {
             this.Name = "SerielleAutokorrelation";

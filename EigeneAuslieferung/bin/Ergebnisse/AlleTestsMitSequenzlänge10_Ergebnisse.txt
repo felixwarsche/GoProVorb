@@ -18,9 +18,9 @@ Generator: NAGsLCG, Verfahren: Eigen, Wert: 0,666666666666667
 Generator: MaplesLCG, Verfahren: SerielleAutokorrelation, Wert: 0,410009962496123
 Generator: MaplesLCG, Verfahren: SequenzUpDown, Wert: 4,25277777777778
 Generator: MaplesLCG, Verfahren: Eigen, Wert: 0,666666666666667
-Generator: Datumsbasiert, Verfahren: SerielleAutokorrelation, Wert: 0,345360824742268
-Generator: Datumsbasiert, Verfahren: SequenzUpDown, Wert: 3,24869929453263
-Generator: Datumsbasiert, Verfahren: Eigen, Wert: 0,222222222222222
+Generator: Datumsbasiert, Verfahren: SerielleAutokorrelation, Wert: 0,92732043777748
+Generator: Datumsbasiert, Verfahren: SequenzUpDown, Wert: 3,75
+Generator: Datumsbasiert, Verfahren: Eigen, Wert: 0,888888888888889
 
 
 

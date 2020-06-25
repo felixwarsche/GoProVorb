@@ -4,12 +4,18 @@ using System.Text;
 
 namespace Zufallsklassen
 {
+    /// <summary>
+    /// Erzeugt einen eigenen datumsbasierten Zufallszahlengenerator
+    /// </summary>
     public class Datumsbasiert : Zufallsbibliothek
     {
         Generatorenklasse Art;
         int i;
         double m;
 
+        /// <summary>
+        /// Erstellt eine Instanz des datumsbasierten Zufallszahlengenerator
+        /// </summary>
         public Datumsbasiert()
         {
             i = 0;
@@ -19,6 +25,10 @@ namespace Zufallsklassen
 
         public Verteilung Verteilung { get; set; }
 
+        /// <summary>
+        /// Generiert eine Gleichverteilte Zufallszahl im Bereich 0-1
+        /// </summary>
+        /// <returns>Zufallszahl im Intervall 0-1</returns>
         public double GeneriereGleichverteilteZufallszahl01()
         {
             DateTime now = DateTime.Now;

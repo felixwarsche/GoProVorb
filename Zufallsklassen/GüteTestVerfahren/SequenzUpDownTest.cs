@@ -4,11 +4,18 @@ using System.Text;
 
 namespace Zufallsklassen
 {
+    /// <summary>
+    /// Erzeugt ein Sequenz-Up-Down-Test
+    /// </summary>
     public class SequenzUpDownTest : GüteTests
     {
         Zufallsbibliothek Bibliothek;
         string Name;
 
+        /// <summary>
+        /// Erstellt die Instanz eines Sequenz-Up-Down-Test
+        /// </summary>
+        /// <param name="bib">Zufallszahlengenerator</param>
         public SequenzUpDownTest(Zufallsbibliothek bib)
         {
             this.Name = "SequenzUpDownTest";
