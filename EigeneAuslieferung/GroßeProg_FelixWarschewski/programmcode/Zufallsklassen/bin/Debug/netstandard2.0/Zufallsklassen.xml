@@ -1,0 +1,266 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Zufallsklassen</name>
+    </assembly>
+    <members>
+        <member name="T:Zufallsklassen.GüteTests">
+            <summary>
+            Beschreibt eine Schnittstelle für verschiedene Güte-Testverfahren
+            </summary>
+        </member>
+        <member name="M:Zufallsklassen.GüteTests.Berechne(System.Int32,System.Int32)">
+            <summary>
+            Berechnet einen Richtwert, um eine Aussage über die Güte eines Verfahrens machen zu können
+            </summary>
+            <param name="k">0 oder beliebig</param>
+            <param name="anz">Sequenzlänge</param>
+            <returns></returns>
+        </member>
+        <member name="T:Zufallsklassen.GüteTestverfahren">
+            <summary>
+            Beschreibt das Güte-Testverfahren
+            </summary>
+        </member>
+        <member name="T:Zufallsklassen.EigenesGüteTestverfahren">
+            <summary>
+            Erzeugt ein eigenes Güte-Testverfahren
+            </summary>
+        </member>
+        <member name="M:Zufallsklassen.EigenesGüteTestverfahren.#ctor(Zufallsklassen.Zufallsbibliothek)">
+            <summary>
+            Erstellt die Instanz der eigenen
+            </summary>
+            <param name="bib"></param>
+        </member>
+        <member name="M:Zufallsklassen.EigenesGüteTestverfahren.Berechne(System.Int32,System.Int32)">
+            <summary>
+            Angelehnt an die SequenzUpDown werden hier die Wechsel der Größen geprüft und dann im Anschluss durch die Anzahl der möglichen Wechsel dividiert.
+            Soll Aufschluss über die mittleren Wechsel geben. Wenn die Werte um die 0,5 oder höher liegen, liegt eine gute Güte vor! Ansonsten eine schlechte, da die Folgen sehr lang sind.
+            </summary>
+            <param name="k">Sequenzlänge</param>
+            <returns>Den Mittelwert aller Kettenwechsel.</returns>
+        </member>
+        <member name="T:Zufallsklassen.SequenzUpDownTest">
+            <summary>
+            Erzeugt ein Sequenz-Up-Down-Test
+            </summary>
+        </member>
+        <member name="M:Zufallsklassen.SequenzUpDownTest.#ctor(Zufallsklassen.Zufallsbibliothek)">
+            <summary>
+            Erstellt die Instanz eines Sequenz-Up-Down-Test
+            </summary>
+            <param name="bib">Zufallszahlengenerator</param>
+        </member>
+        <member name="M:Zufallsklassen.SequenzUpDownTest.Berechne(System.Int32,System.Int32)">
+            <summary>
+            Berechnet die Anzahl der Bitfolgen mit der Länge K.
+            </summary>
+            <param name="k">Wenn 0 dann werden alle möglichen k überprüft, ansonsten nur das angegebene k.</param>
+            <param name="anz">Bestimmt die Sequenzlänge des Tests. Also die Anzahl der untersuchten Zufallszahlen</param>
+            <returns></returns>
+        </member>
+        <member name="M:Zufallsklassen.SequenzUpDownTest.BerechneNopt(System.Int32,System.Int32)">
+            <summary>
+            Berechnet das optimale Ergebnis für bestimmte Kettenlängen
+            </summary>
+            <param name="k">Länge der Kette</param>
+            <param name="anz">Sequenzlänge</param>
+            <returns>Richtwert</returns>
+        </member>
+        <member name="T:Zufallsklassen.SerielleAutokorrelation">
+            <summary>
+            Erzeugt eine Serielle Autokorrelation
+            </summary>
+        </member>
+        <member name="M:Zufallsklassen.SerielleAutokorrelation.#ctor(Zufallsklassen.Zufallsbibliothek)">
+            <summary>
+            Erstellt die Instanz einer seriellen Autokorrelation
+            </summary>
+            <param name="b"></param>
+        </member>
+        <member name="M:Zufallsklassen.SerielleAutokorrelation.Berechne(System.Int32,System.Int32)">
+            <summary>
+            Errechnet den Korrelationswert für das Zufallsgenerierte Array
+            </summary>
+            <param name="k">Abstand der verglichenen Zufallszahlen</param>
+            <returns>Korrelationswert des Zufallszahlengenerators</returns>
+        </member>
+        <member name="T:Zufallsklassen.Verteilung">
+            <summary>
+            Eine Schnittstelle für die angewendeten Verteilungen der Zufallszahlengeneratoren
+            </summary>
+        </member>
+        <member name="M:Zufallsklassen.Verteilung.Transformiere(System.Double)">
+            <summary>
+            Transformiert die x Variable in die entsprechende Verteilung
+            </summary>
+            <param name="x">Wert</param>
+            <returns>Transformiertes x</returns>
+        </member>
+        <member name="P:Zufallsklassen.Verteilung.Art">
+            <summary>
+            Beschreibt die Art der Verteilung
+            </summary>
+        </member>
+        <member name="P:Zufallsklassen.Verteilung.Mittelwert">
+            <summary>
+            Beschreibt den Mittelwert, den die jeweilige Verteilung aufweist
+            </summary>
+        </member>
+        <member name="T:Zufallsklassen.V">
+            <summary>
+            Beschreibt die Art der Verteilung
+            </summary>
+        </member>
+        <member name="T:Zufallsklassen.Gleichverteilung">
+            <summary>
+            Erzeugt eine Gleichverteilung
+            </summary>
+        </member>
+        <member name="M:Zufallsklassen.Gleichverteilung.#ctor">
+            <summary>
+            Erstellt eine Instanz der Gleichverteilung
+            </summary>
+        </member>
+        <member name="M:Zufallsklassen.Gleichverteilung.Transformiere(System.Double)">
+            <summary>
+            Transformiert in die Gleichverteilung
+            Da aber nur gleichverteilte Zahlen bisher übergeben werden, muss nichts transformiert werden.
+            </summary>
+            <param name="x"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Zufallsklassen.Standardnormalverteilung">
+            <summary>
+            Erzeugt eine Standardnormalverteilung
+            </summary>
+        </member>
+        <member name="M:Zufallsklassen.Standardnormalverteilung.#ctor(Zufallsklassen.Zufallsbibliothek)">
+            <summary>
+            Erzeugt eine Instanz einer Standardnormalverteilung
+            </summary>
+            <param name="generator">Zufallszahlengenerator</param>
+        </member>
+        <member name="M:Zufallsklassen.Standardnormalverteilung.Transformiere(System.Double,System.Double)">
+            <summary>
+            Polarmethode wie im Arbeitsbogen beschrieben
+            </summary>
+            <param name="x">Zufallszahl</param>
+            <param name="b">Bibliothek um Zufallszahlen zu generieren</param>
+            <returns>Returnt eine von den beiden generierten unabhängigen Standardnormalverteilten Zufallszahlen (x*p; y*p) Skaliert mit p</returns>
+        </member>
+        <member name="M:Zufallsklassen.Standardnormalverteilung.Transformiere(System.Double)">
+            <summary>
+            Polarmethode wie im Arbeitsbogen beschrieben
+            </summary>
+            <param name="x">Zufallszahl</param>
+            <param name="b">Bibliothek um Zufallszahlen zu generieren</param>
+            <returns>Returnt eine von den beiden generierten unabhängigen Standardnormalverteilten Zufallszahlen (x*p; y*p) Skaliert mit p</returns>
+        </member>
+        <member name="T:Zufallsklassen.Zufallsbibliothek">
+            <summary>
+            Eine Schnittstelle für verschiedene Zufallszahlengeneratoren
+            </summary>
+        </member>
+        <member name="M:Zufallsklassen.Zufallsbibliothek.GeneriereZufallszahl">
+            <summary>
+            Generiert eine Zufallszahl in Abhängigkeit der Verteilung
+            </summary>
+            <returns>Zufallszahl zwischen 0-1</returns>
+        </member>
+        <member name="M:Zufallsklassen.Zufallsbibliothek.GeneriereGleichverteilteZufallszahl01">
+            <summary>
+            Generiert eine Gleichverteilte Zufallszahl
+            </summary>
+            <returns>Zufallszahl zwischen 0-1</returns>
+        </member>
+        <member name="M:Zufallsklassen.Zufallsbibliothek.GetArt">
+            <summary>
+            Beschreibt die Klassenart des Generators
+            </summary>
+            <returns>Generatorenklasse</returns>
+        </member>
+        <member name="M:Zufallsklassen.Zufallsbibliothek.GetM">
+            <summary>
+            Beschreibt das Modul der angewendeten Generatorenklasse
+            </summary>
+            <returns>Modulo</returns>
+        </member>
+        <member name="P:Zufallsklassen.Zufallsbibliothek.Verteilung">
+            <summary>
+            Beschreibt die Verteilung der Generatorenklasse
+            </summary>
+        </member>
+        <member name="T:Zufallsklassen.Generatorenklasse">
+            <summary>
+            Bestimmt die Klasse des Zufallsgenerators
+            </summary>
+        </member>
+        <member name="T:Zufallsklassen.Datumsbasiert">
+            <summary>
+            Erzeugt einen eigenen datumsbasierten Zufallszahlengenerator
+            </summary>
+        </member>
+        <member name="M:Zufallsklassen.Datumsbasiert.#ctor">
+            <summary>
+            Erstellt eine Instanz des datumsbasierten Zufallszahlengenerator
+            </summary>
+        </member>
+        <member name="M:Zufallsklassen.Datumsbasiert.GeneriereGleichverteilteZufallszahl01">
+            <summary>
+            Generiert eine Gleichverteilte Zufallszahl im Bereich 0-1
+            </summary>
+            <returns>Zufallszahl im Intervall 0-1</returns>
+        </member>
+        <member name="M:Zufallsklassen.Datumsbasiert.GeneriereZufallszahl">
+            <summary>
+            Generiert auf Basis der jetzigen Zeit und der Systemzeit eine Zufallszahl[0,1] in Abhängigkeit der i-ten Zufallszahl, welche generiert wird.
+            </summary>
+            <returns>Zufallszahl im Intervall 0-1</returns>
+        </member>
+        <member name="T:Zufallsklassen.LCG">
+            <summary>
+            Erzeugt einen Linearen Kongruenz-Generator
+            </summary>
+        </member>
+        <member name="M:Zufallsklassen.LCG.#ctor(Zufallsklassen.Generatorenklasse,System.Double[])">
+            <summary>
+            Erstellt eine Instanz eines LCGs
+            </summary>
+            <param name="art">Zufallszahlengenerator</param>
+            <param name="p">Parameter</param>
+        </member>
+        <member name="M:Zufallsklassen.LCG.GeneriereZufallszahl">
+            <summary>
+            Generiert eine Zufallszahl in Abhängikeit der gegebenen Parameter und speichert den xi-Parameter nach Schleifendurchlauf.
+            
+            Es wird auch abgefragt, welche Verteilung hier angewendet werden soll und dann ggflls. transformiert.
+            </summary>
+            <returns>Zufallszahl mit gegebener Verteilung</returns>
+        </member>
+        <member name="M:Zufallsklassen.LCG.GeneriereGleichverteilteZufallszahl01">
+            <summary>
+            Berechnet eine Gleichverteilte Zufallszahl nach dem Prinzip der erhaltenen Parameter
+            </summary>
+            <returns>Zufallszahl</returns>
+        </member>
+        <member name="M:Zufallsklassen.LCG.GetM">
+            <summary>
+            Gibt das Modulo zurück
+            </summary>
+            <returns>Modulo</returns>
+        </member>
+        <member name="M:Zufallsklassen.LCG.GetArt">
+            <summary>
+            Gibt die Generatorenklasse zurück
+            </summary>
+            <returns>Generatorenklasse</returns>
+        </member>
+        <member name="T:Zufallsklassen.LCGVerfahrenParameter">
+            <summary>
+            Konstanten-Klasse für die verschiedenen LCG-Verfahrensparameter
+            </summary>
+        </member>
+    </members>
+</doc>
